@@ -1,0 +1,58 @@
+@import '~bootstrap/scss/bootstrap';
+
+// Global color styles
+
+$primary-color: #007bff;
+$secondary-color: #6c757d;// Global typography styles
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+
+
+header {
+  // background-color: $primary-color;
+  color: rgb(0, 0, 0);
+}
+
+nav a {
+  color: $secondary-color;
+}
+
+.btn-primary {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+  }
+}
+
+// Global spacing styles
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+footer {
+  padding: 10px 0;
+  background-color: $secondary-color;
+  color: white;
+  text-align: center;
+}
