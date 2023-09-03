@@ -2,14 +2,26 @@
 
 // Global color styles
 
-$primary-color: #007bff;
+$primary-color: #c7c7c7;
 $secondary-color: #6c757d;// Global typography styles
 
 
 body {
   font-family: Arial, sans-serif;
+  background-image: url('./Assets/images/ahmedbg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+.overlay-container {
+  background-color: rgba(7, 104, 46, 0.5); /* Adjust the color and opacity of the overlay */
+  color: white; /* Text color on the overlay */
+  padding: 0px !important;
+  margin: 0px !important;
+  text-align: center;
+}
 h1, h2, h3 {
   font-weight: bold;
   margin-bottom: 10px;
@@ -21,33 +33,11 @@ p {
 
 
 
-header {
-  // background-color: $primary-color;
-  color: rgb(0, 0, 0);
-}
-
-nav a {
-  color: $secondary-color;
-}
-
-.btn-primary {
-  background-color: $primary-color;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-  &:hover {
-    background-color: darken($primary-color, 10%);
-  }
-}
-
 // Global spacing styles
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0px 10px;
 }
 
 footer {
@@ -56,3 +46,15 @@ footer {
   color: white;
   text-align: center;
 }
+
+.btn {
+  height: 50px;
+  width: 100px;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+}
+

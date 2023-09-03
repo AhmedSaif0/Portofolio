@@ -14,7 +14,6 @@ function App() {
     <div className="App container">
       <header className="App-header">
 
-        <Header/>
         <Home/>
         <About/>
         <Projects/>
