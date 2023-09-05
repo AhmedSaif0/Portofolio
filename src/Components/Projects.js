@@ -2,8 +2,11 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div>
+    <div className='aboutpage'>
+      <div className='container'>
       Projects
+      </div>
+      
     </div>
   )
 }

@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+@import 'animate.css';
 
 // Global color styles
 
@@ -9,6 +10,7 @@ $secondary-color: #6c757d;// Global typography styles
 body {
   font-family: Arial, sans-serif;
   background-image: url('./Assets/images/ahmedbg.jpg');
+  // background-color: rgb(152, 218, 244);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -16,16 +18,22 @@ body {
 }
 
 .overlay-container {
-  background-color: rgba(7, 104, 46, 0.5); /* Adjust the color and opacity of the overlay */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity of the overlay */
   color: white; /* Text color on the overlay */
   padding: 0px !important;
   margin: 0px !important;
   text-align: center;
 }
+
 h1, h2, h3 {
   font-weight: bold;
   margin-bottom: 10px;
 }
+
+// h1:hover {
+//   animation: backOutU p 1s;
+//   color: #ffd700;
+// }
 
 p {
   line-height: 1.6;
@@ -36,8 +44,9 @@ p {
 // Global spacing styles
 .container {
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 0px 10px;
+  margin-left: auto ;
+  margin-right: auto ;
+  padding: 0px 0px;
 }
 
 footer {

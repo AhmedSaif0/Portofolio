@@ -7,11 +7,11 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 
 const Header = () => {
 
-const [faBars, setFaBars] = useState(false);
+const [faBars, setFaBars] = useState(true);
 
   return(
   <>
-        <Navbar className="header-nav" data-bs-theme="dark">
+        <Navbar className={faBars? "header-nav":"header-navshow"} data-bs-theme="dark">
           <Container>
             <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto">Ahmed </Navbar.Brand>
             <Nav className="me-0 ps-4 ml-auto">
@@ -20,8 +20,9 @@ const [faBars, setFaBars] = useState(false);
               <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
               <div className='FaBars' >
-                <FaBars />
-                <FaTimes />
+                <button className='btnbar' onClick={()=>setFaBars(!faBars)}>{ faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}</button>
+                {/* <FaBars />
+                <FaTimes /> */}
               </div>
           </Container>
       </Navbar>

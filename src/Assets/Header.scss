@@ -5,7 +5,7 @@
     justify-content: space-between;
 
     .FaBars{
-display: none;
+            display: none;
     }
 }
 
@@ -13,9 +13,46 @@ display: none;
 justify-content: end !important;
 }
 
-
 @media screen and (max-width: 800px) {
     .header-nav {
+        display: flex;
+        height: 40px;
+        .container{
+            margin-left: 0px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size:25px ;
+
+            .btnbar{
+                background-color: transparent;
+                border: none;
+
+            }
+        }
+        .navbar-brand{
+            position: absolute;
+            top: -5px;
+            left: -10px;
+        }
+
+        .navbar-nav {
+        display: none;
+
+        }
+
+        .FaBars{
+            display: block;
+            position: absolute;
+            top: 5px;
+            right: 32px;
+            color: #fbfffb;
+            background-color: transparent;
+            }
+
+    }
+
+    .header-navshow {
         display: flex;
         height: 100%;
         .container{
@@ -24,6 +61,11 @@ justify-content: end !important;
             justify-content: center;
             align-items: center;
             font-size:25px ;
+
+            .btnbar{
+                background-color: transparent;
+                border: none;
+            }
         }
         .navbar-brand{
             position: absolute;
@@ -43,10 +85,9 @@ justify-content: end !important;
             position: absolute;
             top: 5px;
             right: 32px;
-                
+            color: #fbfffb;
+            background-color: transparent;
             }
 
     }
-
-
    }
