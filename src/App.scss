@@ -2,32 +2,30 @@
 @import 'animate.css';
 
 // Global color styles
-
 $primary-color: #c7c7c7;
 $secondary-color: #6c757d;// Global typography styles
 
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url('./Assets/images/ahmedbg.jpg');
-  // background-color: rgb(152, 218, 244);
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App-header{
+  background-image: url('./Assets/images/code.jpg');
+  // background-color: rgb(17, 23, 38);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-}
 
-.overlay-container {
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust the color and opacity of the overlay */
-  color: white; /* Text color on the overlay */
-  padding: 0px !important;
-  margin: 0px !important;
-  text-align: center;
 }
 
 h1, h2, h3 {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 // h1:hover {
@@ -49,18 +47,15 @@ p {
   padding: 0px 0px;
 }
 
-footer {
-  padding: 10px 0;
-  background-color: $secondary-color;
-  color: white;
-  text-align: center;
-}
 
+
+h1,h2,h3,h4, p {
+  color: #fff;
+}
 .btn {
   height: 50px;
   width: 100px;
   font-size: 1rem;
-  text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;

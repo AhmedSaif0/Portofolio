@@ -8,8 +8,9 @@ import Photo from '../Assets/images/ahmed1.jpg'
 
 const Home = () => {
   return (
-    <section className='homepage mt-1'>
-  <div className='overlay-container overlay-home'>
+    
+    <section className='homepage'>
+
     <div className='container'>
     <Header/>
     {/* <h1>HI, I'M Ahmed Saif <br /> Web devloper</h1> <br /> */}
@@ -20,22 +21,24 @@ const Home = () => {
       <div className='text'>
         <p className="hello">Hello, I'm</p>
           <h1 className="title">Ahmed Saif</h1>
-          <p className="section__text__p2">Frontend Developer</p>
+          <h3>Web Developer </h3>
+          <p className="section__text__p2">I will Turning your ideas into web realities with code.</p>
           <div className="btn-container">
             <button
-              className="btn-1"
+              className=" btn btn-1"
               onclick="window.open('./assets/resume-example.pdf')"
             >
               Download CV
             </button>
-            <button className="btn-2" onclick="location.href='./#contact'">
+            <button className=" btn btn-2" onclick="location.href='./#contact'">
               Contact Info
             </button>
             </div>
         </div>
     </div>
     </div>
-  </div>
+  <div className='overlay-container overlay-home'></div>
+
   </section>
 
   )
