@@ -22,7 +22,7 @@ const Home = () => {
         <p className="hello">Hello, I'm</p>
           <h1 className="title">Ahmed Saif</h1>
           <h3>Web Developer </h3>
-          <p className="section__text__p2">I will Turning your ideas into web realities with code.</p>
+          <p className="p2">I will Turning your ideas into web realities with code.</p>
           <div className="btn-container">
             <button
               className=" btn btn-1"
@@ -31,7 +31,7 @@ const Home = () => {
               Download CV
             </button>
             <button className=" btn btn-2" onclick="location.href='./#contact'">
-              Contact Info
+              Contact me
             </button>
             </div>
         </div>

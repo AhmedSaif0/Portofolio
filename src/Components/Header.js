@@ -21,8 +21,6 @@ const [faBars, setFaBars] = useState(true);
             </Nav>
               <div className='FaBars' >
                 <button className='btnbar' onClick={()=>setFaBars(!faBars)}>{ faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}</button>
-                {/* <FaBars />
-                <FaTimes /> */}
               </div>
           </Container>
       </Navbar>
