@@ -17,29 +17,8 @@ const Home = () => {
     {/* <button type="button" className="btn btn-outline-primary mt-1 mx-1">Download CV</button> */}
     
     <div className='profile'>
-      <div className='photo'><img src={Photo} alt='ahmedsaif'/>
+      <div className='photo'><img src={Photo} alt='ahmedsaif'/></div>
       <div className='text'>
-        <p className="hello">Hello, I'm</p>
-          <h1 className="title">Ahmed Saif</h1>
-          <h3>Web Developer </h3>
-          <div className="btn-container">
-            <button
-              className=" btn btn-1"
-              onclick="window.open('./assets/resume-example.pdf')"
-            >
-              Download CV
-            </button>
-            <button className=" btn btn-2" onclick="location.href='./#contact'">
-              Contact me
-            </button>
-            </div>
-        </div>
-      </div>
-      <div className='right'>
-
-      </div>
-
-      {/* <div className='text'>
         <p className="hello">Hello, I'm</p>
           <h1 className="title">Ahmed Saif</h1>
           <h3>Web Developer </h3>
@@ -55,7 +34,7 @@ const Home = () => {
               Contact me
             </button>
             </div>
-        </div> */}
+        </div>
     </div>
     </div>
   <div className='overlay-container overlay-home'></div>

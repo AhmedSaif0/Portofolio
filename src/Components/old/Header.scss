@@ -29,6 +29,7 @@ justify-content: end !important;
                 transition: all 300ms ease;
                 background-color: transparent;
                 border: none;
+
             }
         }
         .navbar-brand{
@@ -67,7 +68,6 @@ justify-content: end !important;
                 transition: all 300ms ease;
                 background-color: transparent;
                 border: none;
- 
             }
         }
         .navbar-brand{
@@ -77,9 +77,11 @@ justify-content: end !important;
         }
 
         .navbar-nav {
+            
             flex-direction: column !important;
             justify-content: center;
             margin-bottom: 1rem;
+
         }
 
         .FaBars{
@@ -88,13 +90,8 @@ justify-content: end !important;
             position: absolute;
             top: 5px;
             right: 32px;
-            color:$black-color;
+            color: #fbfffb;
             background-color: transparent;
-
-            svg{
-                color:$black-color;
-    
-                    }
             }
 
     }
