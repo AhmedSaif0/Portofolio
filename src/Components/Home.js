@@ -12,12 +12,9 @@ const Home = () => {
     <section className='homepage'>
 
     <div className='container'>
-    <Header/>
-    {/* <h1>HI, I'M Ahmed Saif <br /> Web devloper</h1> <br /> */}
-    {/* <button type="button" className="btn btn-outline-primary mt-1 mx-1">Download CV</button> */}
-    
+    <Header/> 
     <div className='profile'>
-      <div className='photo'><img src={Photo} alt='ahmedsaif'/>
+      <div className='photo radius'><img className='radius' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
         <p className="hello">Hello, I'm</p>
           <h1 className="title">Ahmed Saif</h1>
@@ -35,8 +32,7 @@ const Home = () => {
             </div>
         </div>
       </div>
-      <div className='right'>
-
+      <div className='right radius'>
       </div>
 
       {/* <div className='text'>
