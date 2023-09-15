@@ -1,10 +1,13 @@
 @import '../App.scss';
 .header-nav{
     background: transparent;
-    font-size: 30px;
+    // font-size: 30px;
     justify-content: space-between;
     margin-left: 10px;
 
+    .header-nav, .navbar{
+        font-weight: $fontWeightNormal;
+    }
     .FaBars{
             display: none;
     }

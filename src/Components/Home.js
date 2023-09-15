@@ -14,7 +14,7 @@ const Home = () => {
     <div className='container'>
     <Header/> 
     <div className='profile'>
-      <div className='photo radius'><img className='radius' src={Photo} alt='ahmedsaif'/>
+      <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
         <p className="hello">Hello, I'm</p>
           <h1 className="title">Ahmed Saif</h1>

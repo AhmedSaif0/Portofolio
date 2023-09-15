@@ -13,8 +13,8 @@ const [faBars, setFaBars] = useState(true);
   <>
         <Navbar className={faBars? "header-nav":"header-navshow"} data-bs-theme="dark">
           <Container>
-            <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto">Ahmed </Navbar.Brand>
-            <Nav className="me-0 ps-4 ml-auto">
+            <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" >Ahmed </Navbar.Brand>
+            <Nav className="me-4 p-2 ">
               <Nav.Link href="#home">About</Nav.Link>
               <Nav.Link href="#features">Services</Nav.Link>
               <Nav.Link href="#pricing">Contact</Nav.Link>
