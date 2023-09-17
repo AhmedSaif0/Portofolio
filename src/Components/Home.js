@@ -16,7 +16,7 @@ const Home = () => {
     <div className='profile'>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
-        <p className="hello">Hello, I'm</p>
+        <p className="hello"></p>
           <h1 className="title">Ahmed Saif</h1>
           <h3>Web Developer </h3>
           <div className="btn-container">
@@ -32,30 +32,28 @@ const Home = () => {
             </div>
         </div>
       </div>
-      <div className='right radius'>
+      <div className='right ps '>
+        <h2>About Me</h2>
+        <div className='about-text'>
+          <p>
+            <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
+            Web designer from Sudan,. I have rich experience in
+              web site design and building, also I am good at wordpress. 
+              I love to talk with you about my unique.
+         </p>
+    </div>
+        <div className='details'>
+          <ul>
+              <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
+              <li> <strong> <span> Residence: </span> </strong> <span> UAE </span></li>
+              <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
+              <li> <strong> <span> Address: </span> </strong> <span> Dubai, USA </span></li>
+          </ul>
+        </div>
+
       </div>
-
-      {/* <div className='text'>
-        <p className="hello">Hello, I'm</p>
-          <h1 className="title">Ahmed Saif</h1>
-          <h3>Web Developer </h3>
-          <p className="p2">I will Turning your ideas into web realities with code.</p>
-          <div className="btn-container">
-            <button
-              className=" btn btn-1"
-              onclick="window.open('./assets/resume-example.pdf')"
-            >
-              Download CV
-            </button>
-            <button className=" btn btn-2" onclick="location.href='./#contact'">
-              Contact me
-            </button>
-            </div>
-        </div> */}
     </div>
     </div>
-  <div className='overlay-container overlay-home'></div>
-
   </section>
 
   )

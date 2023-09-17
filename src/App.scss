@@ -13,11 +13,19 @@ $fontWeightLight: 200;
 $fontWeightNormal: 300;
 $fontWeightSemibold: 425;
 $fontWeightBold: 500;
+$font-size: 21px;
+//Sass
+$font-weight-lighter:         200;
+$font-weight-light:           400;
+$font-weight-normal:          500;
+$font-weight-bold:            600;
+$font-weight-bolder:          700;
 
 
 body {
   // font-family: Arial, sans-serif;
-  font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;
+  // font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Poppins';
   box-sizing: border-box;
   background: rgb(230,230,230);
   // background: radial-gradient(circle, rgba(230,230,230,0.7316176470588236) 0%, rgba(45,134,196,1) 55%, rgba(157,217,207,1) 100%);
@@ -39,11 +47,14 @@ body {
 //   // background-repeat: no-repeat;
 
 // }
+.ps{
+  padding-inline-start: 70px;
+}
 
 
 h1, h2, h3 {
-  font-weight: bold;
   margin-bottom: 5px;
+  margin-top: 5px;
 }
 
 // h1:hover {
@@ -53,6 +64,7 @@ h1, h2, h3 {
 
 p {
   line-height: 1.6;
+  font-weight: $font-weight-light;
 }
 
 

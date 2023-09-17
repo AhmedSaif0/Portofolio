@@ -1,6 +1,6 @@
 @import '../App.scss';
 
-$header-font-size: 1.5rem;
+$header-font-size: 21px;
 
 
 .homepage{
@@ -13,7 +13,7 @@ $header-font-size: 1.5rem;
             height: 60px;
             margin-bottom: 7px;
             font-family: inherit;
-            font-weight: 300 ;
+            font-weight: $font-weight-bold;
             font-size: $header-font-size;
 
         }
@@ -21,13 +21,14 @@ $header-font-size: 1.5rem;
         .navbar-brand{
             color: $black-color;
             font-size: $header-font-size;
-            font-weight: 300;
+            font-weight: $font-weight-bold;
+
         }
 
         .nav-link{
             color: $black-color;
             font-size: $header-font-size;
-            font-weight: 300;
+            font-weight: $font-weight-bold;
         }
 
         .profile{
@@ -84,7 +85,7 @@ $header-font-size: 1.5rem;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    margin-top: 41px;
+                    margin-top: 85px;
                 }
 
                 .btn-1 ,.btn-2 {
@@ -118,10 +119,74 @@ $header-font-size: 1.5rem;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
                 padding-right: 10px;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows:  70px 1fr 1fr;
+                grid-template-areas: 'about about';
+
+                
+
+                h2{
+                    margin-top: 20px;
+                    grid-area: about;
+                    font-weight: $font-weight-bold;
+                    font-size: $font-size;
+
+                    &::after{
+                        display: block;
+                        height: 2px;
+                        content: "";
+                        width: 90%;
+                        // background-color: #0058d0;
+                        background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                        background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                        background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+                   
+                        }
+
+                }
+
+                .about-text{
+                    width: 371px;
+                    text-align: start;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    strong{
+                        font-weight: $font-weight-normal;
+                    }
+
+                    &:after{
+                        display: block;
+                        height: 2px;
+                        content: "";
+                        width: 90%;
+                        // background-color: #0058d0;
+                        background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                        background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                        background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+                    }
+                }
+
+                .details{
+                    ul{
+                        list-style: none;
+                        font-weight: $font-weight-bold;
+                        display: flex;
+                        flex-direction: column;
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                    }
+                }
             }
+
 }
 
-@media screen and (max-width:800px) {
+
+
+
+@media screen and (max-width:980px) {
 
     .homepage{
         position: relative;
@@ -227,6 +292,8 @@ $header-font-size: 1.5rem;
                 border-bottom-right-radius: 5px;
                 padding-right: 10px;
             }
+
+    
 }
 
 }
