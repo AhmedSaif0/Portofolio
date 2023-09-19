@@ -1,9 +1,10 @@
 @import '../App.scss';
 .header-nav{
     background: transparent;
-    // font-size: 30px;
-    justify-content: space-between;
-    margin-left: 10px;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        width: 100%;
+    
 
     .header-nav, .navbar{
         font-weight: $fontWeightNormal;

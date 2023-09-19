@@ -47,9 +47,7 @@ body {
 //   // background-repeat: no-repeat;
 
 // }
-.ps{
-  padding-inline-start: 70px;
-}
+
 
 
 h1, h2, h3 {
@@ -71,10 +69,12 @@ p {
 
 // Global spacing styles
 .container {
-  margin-left: auto ;
-  margin-right: auto ;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px 0px;
-  // border: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 

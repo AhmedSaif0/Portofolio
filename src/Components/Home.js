@@ -2,6 +2,8 @@ import React from 'react'
 import '../Assets/Home.scss'
 import Header from './Header'
 import Photo from '../Assets/images/ahmed1.jpg'
+import {BsLinkedin } from 'react-icons/bs'
+import { FaGithubSquare,FaFacebookSquare} from 'react-icons//fa'
 
 
 
@@ -13,6 +15,7 @@ const Home = () => {
 
     <div className='container'>
     <Header/> 
+
     <div className='profile'>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
@@ -32,16 +35,17 @@ const Home = () => {
             </div>
         </div>
       </div>
-      <div className='right ps '>
-        <h2>About Me</h2>
+    <div className='right'>
+            <h2>About Me</h2>
         <div className='about-text'>
-          <p>
-            <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
-            Web designer from Sudan,. I have rich experience in
-              web site design and building, also I am good at wordpress. 
-              I love to talk with you about my unique.
-         </p>
-    </div>
+              <p>
+                <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
+                Web designer from Sudan,. I have rich experience in
+                  web site design and building, also I am good at wordpress. 
+                  I love to talk with you about my unique.
+            </p>
+        </div>
+
         <div className='details'>
           <ul>
               <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
@@ -51,7 +55,16 @@ const Home = () => {
           </ul>
         </div>
 
-      </div>
+        <div className="socials">
+          <ul >
+            <li><a href="#"><BsLinkedin/></a></li>
+            <li><a href="#"><FaFacebookSquare/></a></li>
+            <li><a href="#"><FaGithubSquare/></a></li>
+
+            </ul>
+        </div>
+
+    </div>
     </div>
     </div>
   </section>
