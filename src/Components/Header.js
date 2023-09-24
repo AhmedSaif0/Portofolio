@@ -15,8 +15,8 @@ const [faBars, setFaBars] = useState(true);
           <Container>
             <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" >Ahmed </Navbar.Brand>
             <Nav className="me-4 p-2 ">
-              <Nav.Link href="#home">About</Nav.Link>
-              <Nav.Link href="#features">Services</Nav.Link>
+              {/* <Nav.Link href="#home">About</Nav.Link>
+              <Nav.Link href="#features">Services</Nav.Link> */}
               <Nav.Link href="#pricing">Contact</Nav.Link>
             </Nav>
               <div className='FaBars' >

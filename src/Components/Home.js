@@ -2,8 +2,10 @@ import React from 'react'
 import '../Assets/Home.scss'
 import Header from './Header'
 import Photo from '../Assets/images/ahmed1.jpg'
-import {BsLinkedin } from 'react-icons/bs'
-import { FaGithubSquare,FaFacebookSquare} from 'react-icons//fa'
+import {BsLinkedin,BsGithub,BsShare } from 'react-icons/bs'
+import { LiaLaptopCodeSolid} from 'react-icons/lia'
+import { BiSupport} from 'react-icons/bi'
+// import { IoShareSocialOutline} from 'react-icons/io'
 
 
 
@@ -22,6 +24,12 @@ const Home = () => {
         <p className="hello"></p>
           <h1 className="title">Ahmed Saif</h1>
           <h3>Web Developer </h3>
+          <div className="socials">
+           <ul >
+            <li><a href="#"><BsLinkedin/></a></li>
+            <li><a href="#"><BsGithub/></a></li>
+            </ul>
+         </div>
           <div className="btn-container">
             <button
               className=" btn btn-1"
@@ -36,7 +44,7 @@ const Home = () => {
         </div>
       </div>
     <div className='right'>
-            <h2>About Me</h2>
+        <h2 className='h2 about'>About Me</h2>
         <div className='about-text'>
               <p>
                 <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
@@ -55,14 +63,19 @@ const Home = () => {
           </ul>
         </div>
 
-        <div className="socials">
-          <ul >
-            <li><a href="#"><BsLinkedin/></a></li>
-            <li><a href="#"><FaFacebookSquare/></a></li>
-            <li><a href="#"><FaGithubSquare/></a></li>
+        <h2 className='h2 serv' >My Services</h2>
+        <div className='My-Serv flex'>
+       
+          <ul className='flex'>
+            <li> <span> <LiaLaptopCodeSolid /> </span><br/><strong> <span> Frontend Development </span> </strong> </li>
+            <li> <span> <BsShare/> </span><br/><strong> <span> Social Media Integration </span> </strong> </li>
+            <li> <span> <BiSupport/> </span><br/><strong> <span> Maintenance and Support </span> </strong> </li>
+          </ul>
+   
 
-            </ul>
         </div>
+    
+
 
     </div>
     </div>

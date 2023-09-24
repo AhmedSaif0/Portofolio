@@ -31,6 +31,23 @@ $header-font-size: 21px;
             font-weight: $font-weight-bold;
         }
 
+        // Global style For Head adress
+        .h2{
+ 
+
+            &::after{
+                display: block;
+                height: 2px;
+                content: "";
+                width: 90%;
+                // background-color: #0058d0;
+                background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+           
+                }
+
+        }
         .profile{
             position: relative;
             display: flex;
@@ -77,20 +94,43 @@ $header-font-size: 21px;
                     font-weight: 700;
                 }
                 h3{
-                    margin-top: 32px;
-                    margin-bottom: 10px;
+                    margin-top: 23px;
                     font-size: 22px;
                 }
+
+                .socials{
+                    ul{
+                        list-style: none;
+                        font-size: 18px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        justify-content: center;
+                        gap: 40px;
+                        /* height: 0px; */
+                        padding-left: 0px;
+                   
+                        li{
+                            margin-bottom: 5px;
+                            svg{
+                                font-size: 30px;
+                                color: $blue-color;
+                                border-radius: 50%;
+                                margin-top: 23px;
+                            }
+                        } 
+                    }
+                }
+
                 .btn-container{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    margin-top: 85px;
+                    // margin-top: 85px;
                 }
 
                 .btn-1 ,.btn-2 {
                     color: #000;
-                    border: 1px solid white;
                     background-color: transparent;              
                     transition: all 200ms ease;
                     padding: 1rem;
@@ -99,7 +139,7 @@ $header-font-size: 21px;
                 .btn-1:hover,
                 .btn-2:hover {
                     transition: all 200ms ease;
-                  color:  #0056b3;
+                  color:  $blue-color;
                   font-weight: 600;
                   transform: scale(1.01); 
                 }
@@ -108,32 +148,41 @@ $header-font-size: 21px;
             
 
             }
+
+
             .right{
                 position: relative;
                 right: 0px;
                 top: 25px;
-                background-color: #f8f6f2;
-                width: 760px;
                 z-index: -1;
+                background-color: $white1-color;
+                width: 760px;
+                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
                 height: 550px;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
-                padding-right: 10px;
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: 70px 1fr 1fr;
-                grid-template-areas: "about about";
+                grid-template-rows: 70px 1fr 70px 1fr;
+                grid-template-areas:
+                                        "about about"
+                                        "about-text details"
+                                        "my-serv my-serv"
+                                        "my-servtext my-servtext"
+                                        ;
 
                 
 
                 h2{
                     margin-top: 20px;
-                    grid-area: about;
                     font-weight: $font-weight-bold;
                     font-size: $font-size;
                     padding: 0px 44px;
-
+                    &::first-letter{
+                        color: $blue-color;
+                    }
                     &::after{
+                        margin-top: 10px;
                         display: block;
                         height: 2px;
                         content: "";
@@ -147,12 +196,21 @@ $header-font-size: 21px;
 
                 }
 
+                .about{
+                    grid-area: about;
+                }
+
+                .serv{
+                    grid-area: my-serv;
+                }
+
                 .about-text{
+                    grid-area: about-text;
                     text-align: start;
                     font-size: 1rem;
                     font-weight: 500;
                     padding: 0px 44px;
-                    text-wrap: wrap;
+                    
                     strong{
                         font-weight: $font-weight-normal;
                     }
@@ -160,16 +218,17 @@ $header-font-size: 21px;
                     &:after{
                         display: block;
                         position: absolute;
-                        height: 100%;
+                        height: 52%;
                         content: "";
-                        top: 0px;
-                        left: 47%;
+                        top: 32px;
+                        left: 49%;
                         width: 3px;
                         background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
                     }
                 }
 
                 .details{
+                    grid-area: details;
                     ul{
                         list-style: none;
                         width: 371px;
@@ -207,29 +266,37 @@ $header-font-size: 21px;
 
                         }
                     }
+                
                 }
+                    .My-Serv{
+                        grid-area: my-servtext;
+                        padding: 0px 44px;
+                        background-color: inherit;
 
-                .socials{
-                    ul{
-                        list-style: none;
-                        font-size: 50px;
-                        display: flex;
-                        flex-wrap: wrap;
-                        flex-direction: row;
-                        justify-content: center;
-                        gap: 40px;
+                        ul{
+                            list-style: none;
+                            padding: 0px ;
+                            gap: 30px;
+                            li{
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                align-items: center;
 
-                        li {
-                            font-weight: 700;
-                            margin-bottom: 5px;
-                            svg{
-                                font-size: 60px;
-                                padding: 10px;
-                                color: #008be8;;
+                                svg{
+                                    font-size: 3rem;
+                                    color: $blue-color;
+                                }
+
+                                strong{
+                                    font-weight: $font-weight-normal;
+                                }
                             }
-                        } 
+                        }
                     }
-                }
+
+
             }
 
 }
@@ -237,114 +304,275 @@ $header-font-size: 21px;
 
 
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:980px) {   
+.homepage{
+    position: relative;
+    width: 100%;
+    height: 710px;
+    z-index: 3;
 
-    .homepage{
+    .header-nav .navbar{
+        height: 60px;
+        margin-bottom: 7px;
+        font-family: inherit;
+        font-weight: $font-weight-bold;
+        font-size: $header-font-size;
+
+    }
+
+    .navbar-brand{
+        color: $black-color;
+        font-size: $header-font-size;
+        font-weight: $font-weight-bold;
+
+    }
+
+    .nav-link{
+        color: $black-color;
+        font-size: $header-font-size;
+        font-weight: $font-weight-bold;
+    }
+
+    // Global style For Head adress
+    .h2{
+
+
+        &::after{
+            display: block;
+            height: 2px;
+            content: "";
+            width: 90%;
+            // background-color: #0058d0;
+            background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+            background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+            background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+       
+            }
+
+    }
+    .profile{
         position: relative;
-        width: 100%;
-        height: 100%;
-        z-index: 3;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 600px;
+        width: 1160px;
 
-        .navbar-brand{
-            color: $black-color;
-            font-size: $header-font-size;
-            font-weight: 900;
-        }
-
-        .nav-link{
-            color: $black-color;
-            font-size: $header-font-size;
-            font-weight: 900;
-        }
-
-        .profile{
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+        .photo{
+            // position: absolute;
+            // left: 0px;
+            margin-right: auto;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
             height: 100%;
+            width: 400px;
+          img{
+            height: 350px;
+            width: 400px;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+
+        }   
+
+        .text{
+            height: 250px;
             width: 100%;
-            margin-top: 4px;
-            
-            .photo{
-
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-                height: 604px;
-                width: 100%;
-                margin-left: auto;
-              img{
-                height: 350px;
-                width: 400px;
-                object-fit: cover;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-              }
-
-            
-
-            }   
-
-            .text{
+            text-align: center;
+            align-self: center;
+            background-color: #f8f6f2;
+            color: $black-color;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            .title{
+                font-size: 1.5rem;
                 text-align: center;
-                align-self: center;
-                color: #000;
-                height: 252px;
-                margin-top: -18px;
-                .title{
-                    font-size: 2rem;
-                    text-align: center;
+                margin-top: -12px;
+            }
+            .hello{
+                padding: 8px;
+                font-size: 21px;
+                font-weight: 700;
+            }
+            h3{
+                margin-top: 23px;
+                font-size: 22px;
+            }
+
+            .socials{
+                ul{
+                    list-style: none;
+                    font-size: 18px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 40px;
+                    /* height: 0px; */
+                    padding-left: 0px;
+               
+                    li{
+                        margin-bottom: 5px;
+                        svg{
+                            font-size: 30px;
+                            color: #008be8;
+                            border-radius: 50%;
+                            margin-top: 23px;
+                        }
+                    } 
                 }
-                .hello{
-                    margin-top: 19px;
-                    font-size: 21px;
-                    font-weight: 700;
-                }
-                h3{
-                    margin-top: 30px;
-                    margin-bottom: 46px;
-                    font-size: 22px;
-                }
-                .btn-container{
+            }
+
+            .btn-container{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                margin-top: 40px;
+                // margin-top: 85px;
+            }
 
-                .btn-1 ,.btn-2 {
-                    color: #000;
-                    border: 1px solid white;
-                    background-color: transparent;              
-                    transition: all 300ms ease;
-                    padding: 1rem;
-                    width: 50%;
-                }
-                .btn-1:hover,
-                .btn-2:hover {
-                //   background-color: #0056b3;
-                  color:  #0056b3;
-                  transform: scale(1.02); 
-                }
-    
-                }
+            .btn-1 ,.btn-2 {
+                color: #000;
+                background-color: transparent;              
+                transition: all 200ms ease;
+                padding: 1rem;
+                width: 50%;
+            }
+            .btn-1:hover,
+            .btn-2:hover {
+                transition: all 200ms ease;
+              color:  #0056b3;
+              font-weight: 600;
+              transform: scale(1.01); 
             }
 
             }
-            .right{
-                position: static;
-                right: 0px;
-                top: 25px;
-                background-color:$white1-color;
-                width: 100%;
-                z-index: -1;
-                height: 550px;
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
-                padding-right: 10px;
+        
+
+        }
+
+
+        .right{
+            position: relative;
+            right: 0px;
+            top: 25px;
+            background-color: #f8f6f2;
+            width: 760px;
+            z-index: -1;
+            height: 550px;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px 1fr 70px 1fr;
+            grid-template-areas:
+                                    "about about"
+                                    "about-text details"
+                                    "my-serv my-serv"
+                                    "my-servtext my-servtext"
+                                    ;
+
+            
+
+            h2{
+                margin-top: 20px;
+                font-weight: $font-weight-bold;
+                font-size: $font-size;
+                padding: 0px 44px;
+                &::after{
+                    margin-top: 10px;
+                    display: block;
+                    height: 2px;
+                    content: "";
+                    width: 90%;
+                    // background-color: #0058d0;
+                    background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                    background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                    background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+               
+                    }
+
             }
 
-    
+            .about{
+                grid-area: about;
+            }
+
+            .serv{
+                grid-area: my-serv;
+            }
+
+            .about-text{
+                grid-area: about-text;
+                text-align: start;
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 0px 44px;
+                
+                strong{
+                    font-weight: $font-weight-normal;
+                }
+
+                &:after{
+                    display: block;
+                    position: absolute;
+                    height: 52%;
+                    content: "";
+                    top: 32px;
+                    left: 49%;
+                    width: 3px;
+                    background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+                }
+            }
+
+            .details{
+                grid-area: details;
+                ul{
+                    list-style: none;
+                    width: 371px;
+                    line-height: 2rem;
+                    padding: 0px 44px;
+
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        flex-wrap: wrap;
+                        font-weight: 400;
+                        margin-bottom: 5px;
+
+                        strong{
+                            background: #008be8;
+                            font-size: 14px;
+                            color: #fefefe;
+                            font-weight: $font-weight-light;
+                            border-radius: 3px;
+                            span{
+                            padding: 1px 4px;
+
+                            }
+                        }
+
+                        &:after{
+                            display: block;
+                            height: 2px;
+                            content: "";
+                            width: 90%;
+                            background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                            background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+                            background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
+                        }
+
+                    }
+                }
+            
+            }
+                .My-Serv{
+                    grid-area: my-servtext;
+background-color: #008be8;
+                }
+
+
+        }
+
 }
-
 }
