@@ -1,43 +1,27 @@
 import React from 'react'
 import '../Assets/About.scss'
+import '../Assets/Home.scss'
+
+import {AiOutlineHtml5} from 'react-icons/ai'
+import {LiaCss3} from 'react-icons/lia'
+import {FaSass,FaReact} from 'react-icons/fa'
+import {TbBrandJavascript} from 'react-icons/tb'
 
 const About = () => {
   return (
-    <div className='aboutpage'>
-      <div className='container'>
-      <div className='right'>
-        <h2 className='h2 about'>About Me</h2>
-        <div className='about-text'>
-              <p>
-                <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
-                Web designer from Sudan,. I have rich experience in
-                  web site design and building, also I am good at wordpress. 
-                  I love to talk with you about my unique.
-            </p>
-        </div>
-
-        <div className='details'>
-          <ul>
-              <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
-              <li> <strong> <span> Residence: </span> </strong> <span> UAE </span></li>
-              <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
-              <li> <strong> <span> Address: </span> </strong> <span> Dubai, USA </span></li>
-          </ul>
-        </div>
-
-        <h2 className='h2 serv' >My Services</h2>
-        <div className='My-Serv flex'>
-       
+    <div className='about-page'>
+      <div className='container about-container'>
+      <h2 className='h2'>My Skillsets</h2>
+        <div className='My-skills'>
           <ul className='flex'>
-            <li> <span> <LiaLaptopCodeSolid /> </span><br/><strong> <span> Frontend Development </span> </strong> </li>
-            <li> <span> <BsShare/> </span><br/><strong> <span> Social Media Integration </span> </strong> </li>
-            <li> <span> <BiSupport/> </span><br/><strong> <span> Maintenance and Support </span> </strong> </li>
+            <li> <span> <AiOutlineHtml5 /> </span><br/><strong> <span> Html</span> </strong> </li>
+            <li> <span> <LiaCss3/> </span><br/><strong> <span> Css </span> </strong> </li>
+            <li> <span> <FaSass/> </span><br/><strong> <span> Sass </span> </strong> </li>
+            <li> <span> <TbBrandJavascript/> </span><br/><strong> <span> Javascript </span> </strong> </li>
+            <li> <span> <FaReact/> </span><br/><strong> <span> React js </span> </strong> </li>
           </ul>
-   
-
         </div>
-      </div>
-      
+
       </div>
     </div>
   )

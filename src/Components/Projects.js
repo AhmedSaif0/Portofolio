@@ -1,13 +1,17 @@
 import React from 'react'
 import '../Assets/Projects.scss'
+import Project from './Project'
 
 const Projects = () => {
   return (
-   
-      <div className='container'>
-       <div className='proj-page'>
-          <div1>1111</div1>
-          <div1>2222</div1>
+    <div className='proj-page'>
+      <div className='container porj-container'>
+   <Project/>
+   <Project/>
+   <Project/>
+   <Project/>
+   <Project/>
+   <Project/>
         </div>
       </div>
   )

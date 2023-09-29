@@ -4,7 +4,8 @@
 // Global color styles
 $white-color: #fff;
 $blue-color: #008be8;
-$white1-color: #f8f6f2;
+$white1-color: #ebf2ff;
+// $white1-color: #f8f6f2;
 $black-color: #000;
 $secondary-color: #6c757d;// Global typography styles
 
@@ -35,8 +36,20 @@ body {
   padding: 0px;
 }
 
+.h2{
+  margin-top: 20px !important;
+  font-weight: $font-weight-bold;
+  font-size: $font-size;
+  padding: 0px 44px;
+  &::first-letter{
+      color: $blue-color;
+  }
+
+}
+
 @mixin theline {
   &::after{
+    margin-top: 10px;
     display: block;
     height: 2px;
     content: "";

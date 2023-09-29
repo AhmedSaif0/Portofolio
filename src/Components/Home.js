@@ -43,14 +43,13 @@ const Home = () => {
             </div>
         </div>
       </div>
-    <div className='right'>
+      <div className='right'>
         <h2 className='h2 about'>About Me</h2>
         <div className='about-text'>
               <p>
                 <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
-                Web designer from Sudan,. I have rich experience in
-                  web site design and building, also I am good at wordpress. 
-                  I love to talk with you about my unique.
+                a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces.
+
             </p>
         </div>
 
@@ -74,10 +73,7 @@ const Home = () => {
    
 
         </div>
-    
-
-
-    </div>
+      </div>
     </div>
     </div>
   </section>
