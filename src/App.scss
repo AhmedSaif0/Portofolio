@@ -4,8 +4,8 @@
 // Global color styles
 $white-color: #fff;
 $blue-color: #008be8;
-$white1-color: #ebf2ff;
-// $white1-color: #f8f6f2;
+// $white1-color: #ebf2ff;
+$white1-color: #f8f6f2;
 $black-color: #000;
 $secondary-color: #6c757d;// Global typography styles
 
@@ -23,6 +23,8 @@ $font-weight-normal:          500;
 $font-weight-bold:            600;
 $font-weight-bolder:          700;
 
+
+$box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
 body {
   // font-family: Arial, sans-serif;

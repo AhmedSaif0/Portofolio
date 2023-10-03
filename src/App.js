@@ -10,6 +10,9 @@ import Projects from './Components/Projects';
 import './App.scss';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,8 +20,6 @@ function App() {
         <Home/>
         <About/>
         <Projects/>
-
-
 
       </header>
     </div>
