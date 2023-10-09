@@ -14,9 +14,9 @@ const Home = () => {
   return (
     
     <section className='homepage'>
+    <Header/> 
 
     <div className='container'>
-    <Header/> 
 
     <div className='profile'>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
@@ -48,8 +48,7 @@ const Home = () => {
         <div className='about-text'>
               <p>
                 <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
-                a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects and I also posses magical powers of using react to build delightful user interfaces.
-
+                a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects
             </p>
         </div>
 
@@ -62,17 +61,15 @@ const Home = () => {
           </ul>
         </div>
 
-        <h2 className='h2 serv' >My Services</h2>
+        {/* <h2 className='h2 serv' >My Services</h2>
         <div className='My-Serv flex'>
-       
           <ul className='flex'>
             <li> <span> <LiaLaptopCodeSolid /> </span><br/><strong> <span> Frontend Development </span> </strong> </li>
             <li> <span> <BsShare/> </span><br/><strong> <span> Social Media Integration </span> </strong> </li>
             <li> <span> <BiSupport/> </span><br/><strong> <span> Maintenance and Support </span> </strong> </li>
           </ul>
-   
+        </div> */}
 
-        </div>
       </div>
     </div>
     </div>

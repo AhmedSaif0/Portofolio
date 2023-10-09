@@ -31,7 +31,7 @@ const Projects = () => {
     <div className='proj-page'>
       <div className='container porj-container'>
         <div className='Side-Projects'><h2 className='h2'>Side Projects</h2></div>
-   
+
       {
           projectData.map( (x) => (
             <Project key={x.key} 
@@ -41,6 +41,9 @@ const Projects = () => {
                     />
           ) )
         }
+<Project/>
+<Project/>
+<Project/>
         </div>
       </div>
   )
