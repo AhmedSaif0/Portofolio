@@ -7,8 +7,8 @@ import { BiSupport} from 'react-icons/bi'
 
 const Services = () => {
   return (
-    <div className='container serv-container'>
-
+<section className='sevices '>    
+    <div className='container serv-container flex'>
         <h2 className='h2 serv' >My Services</h2>
         <div className='My-Serv flex'>
           <ul className='flex'>
@@ -20,6 +20,8 @@ const Services = () => {
    
       
     </div>
+</section>
+
   )
 }
 

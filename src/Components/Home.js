@@ -1,6 +1,5 @@
 import React from 'react'
 import '../Assets/Home.scss'
-import Header from './Header'
 import Photo from '../Assets/images/ahmed1.jpg'
 import {BsLinkedin,BsGithub,BsShare } from 'react-icons/bs'
 import { LiaLaptopCodeSolid} from 'react-icons/lia'
@@ -14,7 +13,6 @@ const Home = () => {
   return (
     
     <section className='homepage'>
-    <Header/> 
 
     <div className='container'>
 

@@ -1,8 +1,13 @@
 @import '../App.scss';
 $header-font-size: 21px;
+.sevices{
+    height: 506px;
+    background-color: $white1-color;
 
+}
 .serv-container{
 .serv{
+    @include theline;
     width: 100%;
 }
 }
@@ -11,41 +16,58 @@ $header-font-size: 21px;
     grid-area: my-servtext;
     padding: 0px 44px;
     background-color: inherit;
-
+    padding-top: 5rem;
     ul{
         list-style: none;
         padding: 0px ;
         gap: 30px;
 
-        li:nth-of-type(1) {
-            background: #c7c7ff;
-          }
+        // li:nth-of-type(1) {
+        //     background: #c7c7ff;
+        //   }
           
-          li:nth-of-type(2) {
-            background: #a9ecbf;
-          }
+        //   li:nth-of-type(2) {
+        //     background: #a9ecbf;
+        //   }
           
-          li:nth-of-type(3) {
-            background: #f3bbe1;
-          }
+        //   li:nth-of-type(3) {
+        //     background: #f3bbe1;
+        //   }
 
         li{
+            position: relative;
             text-align: center;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             align-items: center;
-            border: 1px solid #ccc;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
             padding: 78px 38px;
             border-radius: 7px;
 
             svg{
                 font-size: 3rem;
-                color: $blue-color;
+                color: #fff;
+                background-color:$blue-color;
+                border-radius: 50%;
+                padding: 12px;
+                width: 5rem;
+                height: 5rem;
+
             }
+
 
             strong{
                 font-weight: $font-weight-normal;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                background-color: $blue-color;
+                bottom: 0px;
+                height: 5px;
+                width: 100%;
             }
         }
     }

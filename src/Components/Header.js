@@ -11,7 +11,7 @@ const [faBars, setFaBars] = useState(true);
 
   return(
   <>
-      <Navbar className={ `${faBars? "header-nav":"header-navshow"} mb-4`} >
+      <Navbar className={ `${faBars? "header-nav":"header-navshow"} `} >
           <Container>
             <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" >Ahmed </Navbar.Brand>
             <Nav className="me-4 p-2 ">
