@@ -4,9 +4,7 @@ $header-font-size: 21px;
 
 
 .homepage{
-    background-image: url('../Assets/images/code.jpg');
-    background-repeat: no-repeat;
-    object-fit: cover;
+        background-color: $white1-color;
         position: relative;
         width: 100%;
         height: 710px;
@@ -52,41 +50,73 @@ $header-font-size: 21px;
 
         }
         .profile{
-            position: relative;
+            // position: relative;
             display: flex;
             flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-evenly;
-            height: 600px;
+            height: 632px;
             width: 92%;
             padding-top: 30px;
-
             .photo{
-                // position: absolute;
-                // left: 0px;
                 margin-right: auto;
                 box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
                 height: 100%;
                 width: 400px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
               img{
+                position: relative;
                 height: 350px;
                 width: 400px;
                 object-fit: cover;
                 border-top-left-radius: 5px;
                 border-top-right-radius: 5px;
+                z-index: -2;
+
+           
               }
+
 
             }   
 
             .text{
+                position: relative;
                 height: 250px;
                 width: 100%;
                 text-align: center;
                 align-self: center;
                 background-color: $white1-color;
-                color: $black-color;
+                color:  $secondary-color !important;
                 border-bottom-left-radius: 5px;
                 border-bottom-right-radius: 5px;
+                &:before{
+                    content: "";
+                    position: absolute;
+                    left: 25%;
+                    bottom: 43%;
+                    width: 100%;
+                    height: 70%;
+                    background-color: $white1-color;
+                    transform: rotate(348deg);
+                    z-index: -1;
+
+                }
+
+                &:after{
+                    content: '';
+                    position: absolute;
+                    left: -25%;
+                    bottom: 43%;
+                    width: 100%;
+                    height: 70%;
+                    background-color: $white1-color;
+                    transform: rotate(12deg);
+                    z-index: -1;
+                }
+
                 .title{
                     font-size: 1.5rem;
                     text-align: center;
@@ -117,35 +147,64 @@ $header-font-size: 21px;
                         li{
                             margin-bottom: 5px;
                             svg{
-                                font-size: 30px;
-                                color: $blue-color;
+                                font-size: 25px;
+                                color: $secondary-color;
                                 border-radius: 50%;
                                 margin-top: 23px;
+                                border: 5px sol;
                             }
                         } 
                     }
                 }
 
                 .btn-container{
+                    position: relative;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    // margin-top: 85px;
+                    padding-top: 32px;
+                    width: 100%;
+                    @include thelineBefor;
+                }
+
+
+                 .btn-container::before {
+                    position: absolute;
+                    margin-top: 0px;
+                    display: block;
+                    height: 2px;
+                    content: "";
+                    width: 100%;
+                    background: radial-gradient( #bababa 0%, rgb(113 113 113 / 0%) 70%);
                 }
 
                 .btn-1 ,.btn-2 {
                     color: #000;
                     background-color: transparent;              
                     transition: all 200ms ease;
-                    padding: 1rem;
+                    padding: 0.6rem;
                     width: 50%;
+                }
+                .btn-1{
+                   @include theline
+                }
+
+                .btn-1::after {
+                    left: 50%;
+                    top: 26px;
+                    position: absolute;
+                    margin-top: 2px;
+                    height: 56px;
+                    width: 3px;
+                    content: "";
+                    background: radial-gradient( #bababa 0%, rgb(113 113 113 / 0%) 70%);
                 }
                 .btn-1:hover,
                 .btn-2:hover {
-                    transition: all 200ms ease;
+                transition: all 200ms ease;
                   color:  $blue-color;
                   font-weight: 600;
-                  transform: scale(1.01); 
+                  background-color: #dadada;
                 }
     
                 }
@@ -156,12 +215,13 @@ $header-font-size: 21px;
 
             .right{
                 position: relative;
-                right: 0px;
+                right: 2px;
                 top: 25px;
                 z-index: -1;
                 background-color: $white1-color;
                 width: 814px;
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                border: 1px solid #dadada;
+                // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
                 height: 550px;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
@@ -170,9 +230,9 @@ $header-font-size: 21px;
                 grid-template-rows: 70px 1fr 70px 1fr;
                 grid-template-areas:
                                         "about about"
-                                        "about-text details"
-                                        "my-serv my-serv"
-                                        "my-servtext my-servtext"
+                                        "about-text about-text "
+                                        "details details"
+                                  
                                         ;
 
                 
@@ -218,16 +278,16 @@ $header-font-size: 21px;
                         font-weight: $font-weight-normal;
                     }
 
-                    &:after{
-                        display: block;
-                        position: absolute;
-                        height: 52%;
-                        content: "";
-                        top: 32px;
-                        left: 50%;
-                        width: 3px;
-                        background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
-                    }
+                    // &:after{
+                    //     display: block;
+                    //     position: absolute;
+                    //     height: 3px;
+                    //     content: "";
+                    //     top: 41%;
+                    //     left: 44px;
+                    //     width: 100%;
+                    //     background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
+                    // }
                 }
 
                 .details{
@@ -279,6 +339,13 @@ $header-font-size: 21px;
 
             }
 
+}
+
+.codesvg{
+    width: 323px;
+    position: absolute;
+    right: 44px;
+    bottom: 31px;
 }
 
 

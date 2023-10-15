@@ -1,10 +1,12 @@
 import React from 'react'
 import '../Assets/Home.scss'
 import Photo from '../Assets/images/ahmed1.jpg'
+import codesvg from '../Assets/images/Code typing.gif'
 import {BsLinkedin,BsGithub,BsShare } from 'react-icons/bs'
 import { LiaLaptopCodeSolid} from 'react-icons/lia'
 import { BiSupport} from 'react-icons/bi'
 // import { IoShareSocialOutline} from 'react-icons/io'
+import Particles from 'react-particles'
 
 
 
@@ -57,6 +59,13 @@ const Home = () => {
               <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
               <li> <strong> <span> Address: </span> </strong> <span> Dubai, USA </span></li>
           </ul>
+        </div>
+        <div className='codesvg'>
+
+   
+
+          <img  src={codesvg} alt=''/>
+
         </div>
 
         {/* <h2 className='h2 serv' >My Services</h2>
