@@ -1,12 +1,12 @@
 import React from 'react'
 import '../Assets/Home.scss'
 import Photo from '../Assets/images/ahmed1.jpg'
-import codesvg from '../Assets/images/Code typing.gif'
+import codesvg from '../Assets/images/Hand coding.gif'
 import {BsLinkedin,BsGithub,BsShare } from 'react-icons/bs'
 import { LiaLaptopCodeSolid} from 'react-icons/lia'
 import { BiSupport} from 'react-icons/bi'
 // import { IoShareSocialOutline} from 'react-icons/io'
-import Particles from 'react-particles'
+import Particals from './Particals'
 
 
 
@@ -14,7 +14,8 @@ import Particles from 'react-particles'
 const Home = () => {
   return (
     
-    <section className='homepage'>
+    <section className='homepage '>
+      {<Particals />}
 
     <div className='container'>
 

@@ -1,9 +1,10 @@
 @import'../App.scss';
 
 .proj-page{
+    position: relative;
     background-color: $white1-color;
     width: 100%;
-  
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;

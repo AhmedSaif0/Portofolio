@@ -1,8 +1,10 @@
 @import '../App.scss';
 $header-font-size: 21px;
 .sevices{
+    position: relative;
     height: 506px;
     background-color: $white1-color;
+    z-index: 1;
 
 }
 .serv-container{
