@@ -23,19 +23,6 @@ $header-font-size: 21px;
         list-style: none;
         padding: 0px ;
         gap: 30px;
-
-        // li:nth-of-type(1) {
-        //     background: #c7c7ff;
-        //   }
-          
-        //   li:nth-of-type(2) {
-        //     background: #a9ecbf;
-        //   }
-          
-        //   li:nth-of-type(3) {
-        //     background: #f3bbe1;
-        //   }
-
         li{
             position: relative;
             text-align: center;
@@ -74,3 +61,94 @@ $header-font-size: 21px;
         }
     }
 }
+
+
+/* Start Services */
+.services {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    height: 700px;
+    padding: 30px 0px;
+  }
+
+  .services .container {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 40px;
+  }
+  
+  .services .box {
+    background-color: white;
+    box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+    counter-increment: services;
+    transition: $main-transition;
+    position: relative;
+  }
+  .services .box::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    top: -3px;
+    background-color: $blue-color;
+    position: absolute;
+    width: 0;
+    transition: $main-transition;
+  }
+  .services .box:hover {
+    transform: translateY(-10px);
+  }
+  .services .box:hover::before {
+    width: 100%;
+  }
+  .services .box > i {
+    margin: 30px auto 20px;
+    display: block;
+    text-align: center;
+    color: #d5d5d5;
+  }
+  .services .box > h3 {
+    text-align: center;
+    margin: 20px 0 40px;
+    font-size: 25px;
+    color: $blue-color;
+  }
+  .services .box .info {
+    padding: 15px;
+    position: relative;
+    background-color: #f9f9f9;
+    text-align: right;
+  }
+
+  .services .box .info::before {
+    content: "0" counter(services);
+    position: absolute;
+    background-color: $blue-color;
+    color: white;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 25%;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+  }
+  .services .box .info::after {
+    content: "";
+    position: absolute;
+    background-color: #d5d5d5;
+    top: 0;
+    left: 80px;
+    width: 50px;
+    height: calc(100% + 0.4px);
+    transform: skewX(-30deg);
+  }
+  .services .box .info a {
+    color: $blue-color;
+  }
+  /* End Services */
