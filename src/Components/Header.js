@@ -10,11 +10,11 @@ const Header = () => {
 const [faBars, setFaBars] = useState(true);
 
   return(
-  <>
+  <section className='section_nav'>
       <Navbar className={ `${faBars? "header-nav":"header-navshow"} `} >
           <Container>
-            <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" > </Navbar.Brand>
-            <Nav className="me-4 p-2 ">
+            <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" > Ahmed</Navbar.Brand>
+            <Nav className="me-4 p-2  left">
               <Nav.Link href="#home">About</Nav.Link>
               <Nav.Link href="#features">Services</Nav.Link> 
               <Nav.Link href="#pricing">Contact</Nav.Link>
@@ -24,7 +24,7 @@ const [faBars, setFaBars] = useState(true);
               </div>
           </Container>
       </Navbar>
-  </>
+  </section>
   )
 
 }

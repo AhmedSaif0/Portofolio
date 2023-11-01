@@ -6,34 +6,32 @@ import { BiSupport} from 'react-icons/bi'
 
 const Myservices = () => {
   return (
-
-    <>
-    {/* Start Services */}
+    <section className='myservices'>
     <div className="services container" id="services">
       <h2 className="main-title h2">Services</h2>
       <div className="container">
         <div className="box">
-          <i><BsShare/></i>
-          <h3>Security</h3>
+          <i><BiSupport/> </i>
+          <h3>Maintenance and Support</h3>
+          <div className="info">
+            <a href="#">Details</a>
+          </div>
+        </div>
+        <div className="box">
+          <i className="fas" ><LiaLaptopCodeSolid /></i>
+          <h3>Frontend Development</h3>
           <div className="info">
             <a href="#">Details</a>
           </div>
         </div>
         <div className="box">
           <i className="fas" ><BsShare/></i>
-          <h3>Fixing Issues</h3>
+          <h3>Social Media Integration </h3>
           <div className="info">
             <a href="#">Details</a>
           </div>
         </div>
-        <div className="box">
-          <i className="fas fa-map-marked-alt fa-4x" />
-          <h3>Location</h3>
-          <div className="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div className="box">
+        {/* <div className="box">
           <i className="fas fa-laptop-code fa-4x" />
           <h3>Coding</h3>
           <div className="info">
@@ -46,11 +44,11 @@ const Myservices = () => {
           <div className="info">
             <a href="#">Design</a>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </div>
-  </>
+    </section>
   )
 }
 

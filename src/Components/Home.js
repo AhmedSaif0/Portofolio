@@ -15,7 +15,7 @@ const Home = () => {
   return (
     
     <section className='homepage '>
-      {<Particals />}
+      {/* {<Particals />} */}
 
     <div className='container'>
 
