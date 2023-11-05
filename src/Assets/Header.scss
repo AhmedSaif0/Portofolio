@@ -36,22 +36,22 @@ $header-font-size: 21px;
         .left a{
             position: relative;
             font-weight: 400;
-            margin-left: 30px;
-            color: $black-color;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            color: #181818;
+            width: 98px;
+            height: 55px;
+            text-align: center;
             &:Hover{
-                content: "";
-                position: absolute;
-                top :0px;
-                display: block;
-                height: 2px;
-                width: 100%;
+   
                 background-color: #008be8;
+                color:$white1-color;
+                transition: $main-transition;
             }
     
-            .header  li > a:hover {
-                color:$blue-color;
-                background-color: #fafafa;
-              }
+
         }
     
         // .header-nav, .navbar{
