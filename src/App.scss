@@ -33,12 +33,8 @@ body {
   // font-family: Arial, sans-serif;
   // font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;
   font-family: 'Poppins';
-  box-sizing: border-box;
-  background:$white1-color;
-  // background: radial-gradient(circle, rgba(230,230,230,0.7316176470588236) 0%, rgba(45,134,196,1) 55%, rgba(157,217,207,1) 100%);
-  transition: all 0.3s ease;
-  margin: 0px;
-  padding: 0px;
+  background:$background-silver;
+  will-change: transform, box-shadow, z-index, animation;
 }
 
 .h2{
@@ -80,6 +76,20 @@ body {
     background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
 
     }
+}
+
+@mixin thelineh2 {
+  &::after{
+    position: absolute;
+    margin-top: 10px;
+    left: -25%;
+    display: block;
+    height: 2px;
+    content: "";
+    width: 150%;
+    z-index: 5;
+    background: radial-gradient(#bababa 0%, rgba(113, 113, 113, 0) 70%);
+  }
 }
 
 
