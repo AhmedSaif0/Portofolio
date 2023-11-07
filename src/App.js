@@ -9,7 +9,7 @@ import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import './App.scss';
 import Services from './Components/Services';
-import Myservices from './Components/Myservices';
+
 
 function App() {
 
@@ -21,8 +21,7 @@ function App() {
         <Home/>
         <Services/>
         <Skills/>
-        <Myservices/>
-        {/* <Projects/> */}
+        <Projects/>
 
     </div>
   );

@@ -29,6 +29,16 @@ $font-weight-bolder:          700;
 
 $box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+} 
+
 body {
   // font-family: Arial, sans-serif;
   // font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;

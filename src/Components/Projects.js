@@ -1,29 +1,31 @@
 import React from 'react'
 import '../Assets/Projects.scss'
 import Project from './Project'
-import imag from '../Assets/images/logo4.png'
+import imag from '../Assets/images/bty.png'
+import imag1 from '../Assets/images/van.png'
+import imag2 from '../Assets/images/expenses.png'
 
 const Projects = () => {
 
   const projectData = [ {
     key:1,
-    title: "Project 1",
+    title: "Battery Test",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     image : imag ,
 
   },
   {
     key:1,
-    title: "Project 1",
+    title: "Van life",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    image : imag ,
+    image : imag1 ,
 
   },
   {
     key:1,
-    title: "Project 1",
+    title: "Expenses Traker",
     description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    image : imag ,
+    image : imag2 ,
 
   }]
 
@@ -39,11 +41,13 @@ const Projects = () => {
                       description = {x.description}
                       image = {x.image}
                     />
+
           ) )
         }
-<Project/>
-<Project/>
-<Project/>
+                            <Project/>
+                    <Project/>
+                    <Project/>
+
         </div>
       </div>
   )

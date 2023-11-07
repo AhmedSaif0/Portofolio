@@ -1,10 +1,12 @@
 import React from 'react'
+import { BiSupport} from 'react-icons/bi'
 import '../Assets/Project.scss'
+import '../Assets/Services.scss'
+
 
 const Project = ({key,image,title,description}) => {
   return (
-    <div key={key} className='project'>
-        <div className='card'>
+        <div className='card' key={key}>
             <div class="card">
                 {<img className='pro-img' src={image} alt='project'/> || 
                 
@@ -17,10 +19,13 @@ const Project = ({key,image,title,description}) => {
                     <button className="card__button">Live Demo</button>
                     <button className="card__button secondary">Source Code</button>
                 </div>
+
             </div>
         </div>
-    </div>
+
+ 
   )
 }
 
 export default Project
+

@@ -10,6 +10,7 @@ const Myservices = () => {
     <div className="services container" id="services">
       <h2 className="main-title h2">Services</h2>
       <div className="container">
+
         <div className="box">
           <i><BiSupport/> </i>
           <h3>Maintenance and Support</h3>
@@ -17,6 +18,8 @@ const Myservices = () => {
             <a href="#">Details</a>
           </div>
         </div>
+
+
         <div className="box">
           <i className="fas" ><LiaLaptopCodeSolid /></i>
           <h3>Frontend Development</h3>
@@ -24,6 +27,7 @@ const Myservices = () => {
             <a href="#">Details</a>
           </div>
         </div>
+
         <div className="box">
           <i className="fas" ><BsShare/></i>
           <h3>Social Media Integration </h3>
@@ -31,20 +35,6 @@ const Myservices = () => {
             <a href="#">Details</a>
           </div>
         </div>
-        {/* <div className="box">
-          <i className="fas fa-laptop-code fa-4x" />
-          <h3>Coding</h3>
-          <div className="info">
-            <a href="#">Details</a>
-          </div>
-        </div>
-        <div className="box">
-          <i className="fas fa-palette fa-4x" />
-          <h3>Security</h3>
-          <div className="info">
-            <a href="#">Design</a>
-          </div>
-        </div> */}
 
       </div>
     </div>

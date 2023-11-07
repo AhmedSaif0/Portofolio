@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Assets/About.scss'
+import '../Assets/Skills.scss'
 import '../Assets/Home.scss'
 
 import {AiOutlineHtml5} from 'react-icons/ai'
