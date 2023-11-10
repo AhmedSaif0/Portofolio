@@ -20,8 +20,6 @@ const Services = () => {
             <li> <div> <img src={support}alt='' /> </div><div className='strong flex'><strong className='flex'> <span> Maintenance and Support </span> </strong> </div></li>
           </ul>
         </div>
-   
-      
     </div>
 </section>
 
