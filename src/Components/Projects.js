@@ -1,10 +1,13 @@
 import React from 'react'
 import '../Assets/Projects.scss'
 import Project from './Project'
-import imag from '../Assets/images/bty.png'
-import imag1 from '../Assets/images/van.png'
-import imag2 from '../Assets/images/expenses.png'
+// import imag from '../Assets/images/bty.png'
+// import imag1 from '../Assets/images/van.png'
+// import imag2 from '../Assets/images/expenses.png'
 
+import imag from '../Assets/images/Hand coding.gif'
+import imag1 from '../Assets/images/Logoo.png'
+import imag2 from '../Assets/images/background.jpg'
 const Projects = () => {
 
   const projectData = [ {
