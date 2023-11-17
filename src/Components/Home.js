@@ -16,14 +16,16 @@ const Home = () => {
     
   <section className='homepage '>
     {/* {<Particals />} */}
+    <div className='light-right'></div>
+    <div className='light-left'></div>
 
   <div className='container'>
 
   <div className='profile'>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
-        <p className="hello"></p>
-          <h1 className="title">Ahmed Saif</h1>
+        <p className="hello">Hello, I’m</p>
+          <h3 className="title">Ahmed Saif</h3>
           <h3>Web Developer </h3>
           <div className="socials">
             <ul >
@@ -44,34 +46,7 @@ const Home = () => {
             </div>
         </div>
       </div>
-      <div className='right'>
-       <div className='container'>
-        <h2 className='h2 about'>About Me</h2>
-        <div className='about-text'>
-              <p>
-                <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
-                a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects
-            </p>
-        </div>
-
-        <div className='details'>
-          <ul>
-              <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
-              <li> <strong> <span> Residence: </span> </strong> <span> UAE </span></li>
-              <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
-              <li> <strong> <span> Address: </span> </strong> <span> Dubai, USA </span></li>
-          </ul>
-        </div>
-        <div className='codesvg'>
-
-
-
-          <img className="imagecode" src={codesvg} alt=''/>
-
-        </div>
-
-      </div>
-    </div>
+{/*  */}
   </div>
   </div>
   </section>

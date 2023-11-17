@@ -1,41 +1,54 @@
 @import '../App.scss';
 
 $header-font-size: 21px;
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
-    z-index: 1;
-}
+
+
+
 
 .homepage{
-    background-image: url("../Assets/images/background\ \(1\).jpg");
-    background-repeat: no-repeat;
-    background-position: center;    
-    background-attachment: fixed;
-    object-fit: cover;
+        // background-image: url("../Assets/images/background\ \(1\).jpg");
+        // background-repeat: no-repeat;
+        // background-position: center;    
+        // background-attachment: fixed;
+        // background-size: cover;
+    background: white;
         display: flex;                          
         position: relative;
         width: 100%;
-        height: 100%;
+        height: 100vh;
         align-items: center;
         justify-content: center;
         z-index: 1;
         padding: 32px 0px;
 
-
-
-        &:after {
+        .light-right{
+            z-index: 6;
+            width: 600px;
+            height: 1200px;
+           background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
+            // background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);
+            opacity: 0.3;
+            margin-top: 40px;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+            top: 0%;
+            bottom: auto;
+            left: auto;
+            right: 0%;
+        }
+
+        .light-left{
             z-index: 1;
+            width: 600px;
+            height: 1200px;
+            background-image: radial-gradient(circle farthest-corner at -10% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);
+            opacity: .3;
+            margin-top: -168px;
+            margin-left: 0;
+            position: absolute;
+            top: 0%;
+            bottom: auto;
+            left: 0%;
+            right: auto;
         }
 
         // Global style For Head adress
@@ -56,33 +69,28 @@ $header-font-size: 21px;
 
         // }
         .profile{
-          z-index: 1;
+            z-index: 1;
+            padding: 76px 0px 0px 0px; 
             display: flex;
             flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: space-evenly;
-            height: 600px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: auto;
             width: 1214px;
+
             .photo{
-                margin-right: auto;
-                box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-                height: 100%;
+                // margin-right: auto;
+                // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                height: 730px;
                 width: 400px;
                 overflow: hidden;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
               img{
                 position: relative;
-                height: 350px;
+                height: 300px;
                 width: 400px;
                 object-fit: cover;
-                border-top-left-radius: 5px;
-                border-top-right-radius: 5px;
                 z-index: -3;
-
-           
               }
 
 
@@ -90,51 +98,57 @@ $header-font-size: 21px;
 
             .text{
                 position: relative;
-                height: 250px;
+                height: 50%;
                 width: 100%;
                 text-align: center;
                 align-self: center;
                 background-color: $white1-color;
                 color:  $secondary-color !important;
-                border-bottom-left-radius: 5px;
-                border-bottom-right-radius: 5px;
+       
                 &:before{
                     content: "";
                     position: absolute;
-                    left: 25%;
-                    bottom: 43%;
+                    left: 85%;
+                    bottom: 37%;
                     width: 100%;
                     height: 70%;
-                    background-color: $white1-color;
-                    transform: rotate(348deg);
-                    z-index: -2;
+                    background-color: var(--bs-white);
+                    transform: rotate(50deg);
+                    z-index: -1;
                 }
 
                 &:after{
-                    content: '';
+                    content: "";
                     position: absolute;
-                    left: -25%;
-                    bottom: 43%;
+                    left: -89%;
+                    bottom: 167%;
                     width: 100%;
                     height: 70%;
-                    background-color: $white1-color;
-                    transform: rotate(12deg);
+                    background-color: white;
+                    transform: rotate(45deg);
                     z-index: -2;
                 }
 
                 .title{
-                    font-size: 1.5rem;
+                    font-size: 3rem;
                     text-align: center;
                     margin-top: -12px;
+                    color: var(--bs-gray-700);
+
                 }
                 .hello{
                     padding: 8px;
-                    font-size: 21px;
+                    font-size: 2rem;
                     font-weight: 700;
+                    background-color: $white1-color;
+
                 }
                 h3{
-                    margin-top: 23px;
-                    font-size: 22px;
+                    margin-top: 55px;
+                    font-size: 2rem;
+                    color: var(--bs-primary);
+                    font-weight: 600;
+
                 }
 
                 .socials{
@@ -146,7 +160,7 @@ $header-font-size: 21px;
                         flex-direction: row;
                         justify-content: center;
                         gap: 40px;
-                        /* height: 0px; */
+                        background-color: $white1-color;
                         padding-left: 0px;
                    
                         li{
@@ -155,7 +169,7 @@ $header-font-size: 21px;
                                 font-size: 25px;
                                 color: $secondary-color;
                                 border-radius: 50%;
-                                margin-top: 23px;
+                                margin-top: 55px;
                                 border: 5px sol;
                             }
                         } 
@@ -164,10 +178,10 @@ $header-font-size: 21px;
 
                 .btn-container{
                     position: relative;
+                    bottom:-50px;
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
-                    padding-top: 32px;
                     width: 100%;
                     @include thelineBefor;
                 }
@@ -218,7 +232,7 @@ $header-font-size: 21px;
             }
 
 
-            .right .container{
+            .right.container{
                 position: relative;
                 right: 2px;
                 top: 25px;
