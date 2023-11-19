@@ -1,15 +1,18 @@
 import React from 'react'
-import '../Assets/Home.scss'
-import Photo from '../Assets/images/ahmed1.jpg'
+import '../Assets/About.scss'
 import codesvg from '../Assets/images/Hand coding.gif'
+import Photo from '../Assets/images/ahmed1.jpg'
 
 
 const about = () => {
   return (
+  <section className='about-section'>
     <div className='container'>
      <div className='right'>
-       <div className='container'>
-        <h2 className='h2 about'>About Me</h2>
+       
+        <div className='about-title'> 
+          <h2 className='h2 about'>About Me</h2>
+        </div>
         <div className='about-text'>
               <p>
                 <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
@@ -27,15 +30,13 @@ const about = () => {
         </div>
         <div className='codesvg'>
 
-
-
           <img className="imagecode" src={codesvg} alt=''/>
 
         </div>
 
-      </div>
     </div>
     </div>
+  </section>
   )
 }
 

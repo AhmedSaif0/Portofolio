@@ -7,7 +7,7 @@ $blue-color: #008be8;
 $white1-color:white;
 $background-silver: #ececec;
 // $white1-color: #f8f6f2;
-$black-color: #343a40;
+$black-color: #000000;
 $secondary-color: #6c757d;
 
 $main-transition: 0.3s;
@@ -43,7 +43,7 @@ body {
   // font-family: Arial, sans-serif;
   // font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;
   font-family: 'Poppins';
-  background:$background-silver;
+  background:$white-color;
   will-change: transform, box-shadow, z-index, animation;
 }
 
@@ -116,6 +116,7 @@ h1, h2, h3 {
 
 p {
   line-height: 1.6;
+  margin: 20px 0px;
   font-weight: $font-weight-light;
 }
 

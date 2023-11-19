@@ -1,6 +1,10 @@
 @import'../App.scss';
 @import'../Assets/Home.scss';
   
+ // Define an array of colors
+$indexes: 1,2,3,4,5; // Define the indexes for each color in the array
+// Create a mixin to generate the CSS styles based on the index and color values passed as parameters
+
   .about-page{
     position: relative;
     // background-image: url('../Assets/images/background.jpg');
@@ -52,9 +56,14 @@
                   flex-wrap: wrap;
                   align-items: center;
 
-                  svg{
+                 .skill-icon-1 {
                       font-size: 8rem;
-                      color: $blue-color;
+                      $colors:#ff5733, #33ccff, #cc99ff, #ffcc00, #66ff66 ;
+                      @for $i from 1 through length($colors) {
+                       &:nth-child(#{$i}) svg  {
+                          color: nth($colors, $i);
+                        }
+                      }
                   }
 
                   strong{
@@ -121,10 +130,15 @@
                   flex-wrap: wrap;
                   align-items: center;
 
-                  svg{
-                      font-size: 8rem;
-                      color: $blue-color;
-                  }
+                  // svg{
+                  //     font-size: 8rem;
+                  //     $colors:(#ff5733, #33ccff, #cc99ff, #ffcc00, #66ff66) ;
+                  //     @for $i from 1 through length($colors) {
+                  //       &:nth-child(#{$i}) {
+                  //         color: nth($colors, $i);
+                  //       }
+                  //     }
+                  // }
 
                   strong{
                       font-weight: $font-weight-normal;

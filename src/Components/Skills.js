@@ -14,11 +14,11 @@ const Skills = () => {
       <h2 className='h2'>My Skillsets</h2>
         <div className='My-skills flex'>
           <ul className='flex'>
-            <li> <span> <AiOutlineHtml5 /> </span><br/><strong> <span> Html</span> </strong> </li>
-            <li> <span> <LiaCss3/> </span><br/><strong> <span> Css </span> </strong> </li>
-            <li> <span> <FaSass/> </span><br/><strong> <span> Sass </span> </strong> </li>
-            <li> <span> <TbBrandJavascript/> </span><br/><strong> <span> Javascript </span> </strong> </li>
-            <li> <span> <FaReact/> </span><br/><strong> <span> React js </span> </strong> </li>
+            <li> <span className='skill-icon-1'> <AiOutlineHtml5 /> </span><br/><strong> <span> Html</span> </strong> </li>
+            <li> <span className='skill-icon-1'> <LiaCss3/> </span><br/><strong> <span> Css </span> </strong> </li>
+            <li> <span className='skill-icon-1'> <FaSass/> </span><br/><strong> <span> Sass </span> </strong> </li>
+            <li> <span className='skill-icon-1'><TbBrandJavascript/> </span><br/><strong> <span> Javascript </span> </strong> </li>
+            <li> <span className='skill-icon-1'> <FaReact/> </span><br/><strong> <span> React js </span> </strong> </li>
           </ul>
         </div>
 
