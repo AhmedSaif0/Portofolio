@@ -14,8 +14,8 @@ const about = () => {
           <h2 className='h2 about'>About Me</h2>
         </div>
         <div className='about-text'>
+             <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
               <p>
-                <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
                 a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects
             </p>
         </div>

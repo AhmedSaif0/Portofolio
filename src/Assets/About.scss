@@ -1,8 +1,6 @@
 @import '../App.scss';
 
 .about-section{
-    margin-top: 20px;
-    margin-bottom: 20px;
     background-color: $white1-color;
     height: 80vh;
 }
@@ -60,23 +58,19 @@
     .about-text{
         grid-area: about-text;
         text-align: start;
-        font-size: 1rem;
         font-weight: 500;
-        padding: 0px 44px;
+        padding:0px 44px;
+        padding-top: 2rem;
+        font-size: 1rem;
         strong{
             font-weight: $font-weight-normal;
+            font-size: 1.2rem;
         }
 
-        // &:after{
-        //     display: block;
-        //     position: absolute;
-        //     height: 3px;
-        //     content: "";
-        //     top: 41%;
-        //     left: 44px;
-        //     width: 100%;
-        //     background: radial-gradient(ellipse at left, #ddd 0%, rgba(255, 255, 255, 0) 70%);
-        // }
+        p{
+            padding-top: 1rem;
+            font-size: 17px;
+        }
     }
 
     .details{

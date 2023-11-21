@@ -18,10 +18,9 @@ function App() {
         <Header/> 
         <Home/>
         <About/>
-        <Services/>
         <Skills/>
+        <Services/>
         <Projects/>
-
     </div>
   );
 }
