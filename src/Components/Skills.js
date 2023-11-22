@@ -9,7 +9,7 @@ import {TbBrandJavascript} from 'react-icons/tb'
 
 const Skills = () => {
   return (
-    <div className='about-page'>
+    <div className='skills-page'>
       <div className='container about-container'>
       <h2 className='h2'>My Skillsets</h2>
         <div className='My-skills flex'>

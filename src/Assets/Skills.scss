@@ -5,29 +5,48 @@
 $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
 // Create a mixin to generate the CSS styles based on the index and color values passed as parameters
 
-  .about-page{
+  .skills-page{
     position: relative;
-    // background-image: url('../Assets/images/background.jpg');
-    // background-repeat: no-repeat;
-    // object-fit: cover;
-        width: 100%;
-        height: 550px;
-        display: flex;
-        justify-content: center;
-        background-color: $background-silver;
-        z-index: 1;
+    background-image: url('../Assets/images/homeBK.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    // background-color: #f3f8ff;
+    z-index: 1;
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(0 0 0 / 77%);
+    }
 
         // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
+        & h2,strong{
+          color: white !important;
+        }
 
      .about-container{
 
-        position: relative;
-          width: 100%;
-          height: 100%;
+            position: relative;
+            padding-bottom: 3rem;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
 
             .h2{
-              margin-top: 55px !important;
+              margin-top: 40px !important;
               position: relative;
               top: 0px;
               padding: 20px;
@@ -35,10 +54,10 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
               width: 200px;
               text-align: center;
                 @include thelineh2
-
              }
+
              .My-skills{
-              margin-bottom: 115px;
+              padding-top: 3rem;
               flex-wrap: wrap;
               flex-direction: row;
               width: 100%;
@@ -47,7 +66,7 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
 
             ul{
               list-style: none;
-              padding: 0px ;
+              padding-top: 2rem ;
               gap: 90px;
               li{
                   text-align: center;
@@ -55,15 +74,25 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
                   flex-direction: column;
                   flex-wrap: wrap;
                   align-items: center;
+               
+                  .skill-icon-1{
+                    border: #c4c8cb solid 0.222px;
+                    padding: 25px;
+                    border-radius: 5px;
+                    transform: rotate(45deg);
+                     backdrop-filter: blur(8px);
+                  }
 
-                 .skill-icon-1 {
-                      font-size: 8rem;
-                      $colors:#ff5733, #33ccff, #cc99ff, #ffcc00, #66ff66 ;
-                      @for $i from 1 through length($colors) {
-                       &:nth-child(#{$i}) svg  {
-                          color: nth($colors, $i);
-                        }
-                      }
+                  $colors:(#E44D26, #264DE4, #CD6799, #F0DB4F,#61DAFB) ;
+                  @for $i from 1 through length($colors) {
+                    &:nth-child(#{$i}) {
+                      svg{
+                        color: nth($colors, $i);
+                        font-size: 4rem;
+                        transform: rotate(315deg);
+                    }
+
+                    }
                   }
 
                   strong{
@@ -94,7 +123,6 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
 
 
      .about-container{
-
         position: relative;
           width: 100%;
           height: 100%;
@@ -130,15 +158,18 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
                   flex-wrap: wrap;
                   align-items: center;
 
-                  // svg{
-                  //     font-size: 8rem;
-                  //     $colors:(#ff5733, #33ccff, #cc99ff, #ffcc00, #66ff66) ;
-                  //     @for $i from 1 through length($colors) {
-                  //       &:nth-child(#{$i}) {
-                  //         color: nth($colors, $i);
-                  //       }
-                  //     }
-                  // }
+                  $colors:(#ff5733, #33ccff, #cc99ff, #ffcc00, #66ff66) ;
+                  @for $i from 1 through length($colors) {
+                    &:nth-child(#{$i}) {
+                      svg{
+                        color: nth($colors, $i);
+                        font-size: 4rem;
+                    }
+
+                    }
+                  }
+
+
 
                   strong{
                       font-weight: $font-weight-normal;
