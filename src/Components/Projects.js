@@ -5,30 +5,30 @@ import Project from './Project'
 // import imag1 from '../Assets/images/van.png'
 // import imag2 from '../Assets/images/expenses.png'
 
-import imag from '../Assets/images/Hand coding.gif'
-import imag1 from '../Assets/images/Logoo.png'
-import imag2 from '../Assets/images/background.jpg'
+import imag from '../Assets/images/expenses.png'
+import imag1 from '../Assets/images/van.png'
+import imag2 from '../Assets/images/bty.png'
 const Projects = () => {
 
   const projectData = [ {
     key:1,
     title: "Battery Test",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    image : imag ,
+    description:"web application tracking laptop battery discharging",
+    image : imag2 ,
 
   },
   {
     key:1,
     title: "Van life",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    description:"Car rental website",
     image : imag1 ,
 
   },
   {
     key:1,
     title: "Expenses Traker",
-    description:"Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-    image : imag2 ,
+    description:"tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
+    image : imag ,
 
   }]
 
@@ -47,9 +47,7 @@ const Projects = () => {
 
           ) )
         }
-                            <Project/>
-                    <Project/>
-                    <Project/>
+
 
         </div>
       </div>

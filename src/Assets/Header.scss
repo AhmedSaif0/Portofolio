@@ -25,7 +25,7 @@ $header-font-size: 21px;
     
     
     .header-nav{
-        background: transparent;
+        background: $white-color;
             flex-wrap: nowrap;
             justify-content: space-around;
             width: 100%;
