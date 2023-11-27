@@ -98,11 +98,12 @@ $header-font-size: 21px;
               img{
                 position: relative;
                 align-self: center;
-                height: 265px;
-                width: 365px;
+                height: 286px;
+                border-radius: 3px;
+                width: 297px;
                 object-fit: cover;
-                z-index: -3;
-                clip-path: polygon(100% 0, 100% 82%, 90% 100%, 0 100%, 0 15%, 10% 0);
+                z-index: 1;
+                clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
               }
 
 
@@ -203,36 +204,41 @@ $header-font-size: 21px;
                     padding-top: 20px;              
                     // new style
 
-                    button {
+                    .btn-1, .btn-2 {
                         border-radius: .25rem;
                         text-transform: uppercase;
                         font-style: normal;
                         font-weight: 400;
                         padding-left: 25px;
                         padding-right: 25px;
-                        color: #fff;
-                        -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-                        clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+                        // -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+                        // clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
                         height: 40px;
-                        font-size: 0.7rem;
                         line-height: 14px;
                         letter-spacing: 1.2px;
                         transition: .2s .1s;
-                        border: 0 solid;
                         overflow: hidden;
-                        background-image: linear-gradient(90deg, var(--bs-black), var(--bs-black));
+                        border: 1px solid #ccc;
                       }
 
-                      button.btn1 {
-                        background-image: transparent;
-                        background:transparent;
+                      .btn-1 {
+                        background:transparent ;
+                        color: #000000;
+
                       }
+                      .btn-2 {
+                        background-image: linear-gradient(90deg, var(--bs-black), var(--bs-black));
+                        color: white;
+
+                      }
+
                       
                       button:hover {
                         cursor: pointer;
                         transition: all .3s ease-in;
                         padding-right: 30px;
                         padding-left: 30px;
+                        color: #fff;
                         background-image: linear-gradient(90deg,#1c1c1c,#0d6efd);
 
                       }
@@ -380,11 +386,12 @@ $header-font-size: 21px;
               img{
                 position: relative;
                 align-self: center;
-                height: 265px;
-                width: 365px;
+                height: 320px;
+                border-radius: 20px;
+                width: 280px;
                 object-fit: cover;
                 z-index: -3;
-                clip-path: polygon(100% 0, 100% 82%, 90% 100%, 0 100%, 0 15%, 10% 0);
+                // clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
               }
 
 

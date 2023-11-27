@@ -33,11 +33,11 @@ const Home = () => {
           </div>
           <div className="btn-container">
 
-            <button className=" btn btn-1"
+            <button className="btn btn-1"
               onclick="window.open('./assets/resume-example.pdf')">
                Download CV
             </button>
-            <button className=" btn btn-1">
+            <button className="btn btn-2">
                Contact ME
             </button>
 

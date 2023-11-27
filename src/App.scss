@@ -40,11 +40,10 @@ a {
 } 
 
 body {
-  // font-family: Arial, sans-serif;
-  // font-family: 'Sohne Var', 'Helvetica Neue', Arial, sans-serif;
   font-family: 'Poppins';
   background:$white-color;
   will-change: transform, box-shadow, z-index, animation;
+  box-sizing: border-box;
 }
 
 .h2{
