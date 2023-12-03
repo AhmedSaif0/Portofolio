@@ -7,7 +7,8 @@
 
 .right {
     position: relative;
-    right: 2px;
+    left: auto;
+    right: auto;
     top: 25px;
     z-index: 1;
     background-color: $white1-color;
@@ -115,12 +116,21 @@
         }
     
     }
+    .codesvg{
+        width: 285px;
+        position: absolute;
+        right: 44px;
+        bottom: -15px;
+        img{
+            width: 100%;
+        }
+    }
        
 
 
 }
 
-@media screen and (max-width:726px) {
+@media screen and (max-width:600px) {
     .about-section{
         background-color: $white1-color;
         height: fit-content;
@@ -129,16 +139,21 @@
     
     .right {
         position: relative;
-        right: 2px;
+        right: 0px;
         top: 25px;
         z-index: 1;
-        background-color: $white1-color;
+        background-color: white;
         width: 100%;
-        // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
         height: auto;
-
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr auto auto;
+        grid-template-areas:
+            "about "
+            "about-text "
+            "details "
+            "codesvg ";
         
-        .about-title {
+  .about-title {
             position: relative;
             width: 100%;
             display: flex;
@@ -160,18 +175,15 @@
                 color: $blue-color;
             }
         }
+
         }
     
-    
-        .serv{
-            grid-area: my-serv;
-        }
     
         .about-text{
             grid-area: about-text;
             text-align: start;
             font-weight: 500;
-            padding:0px 44px;
+            padding:0px 0px;
             padding-top: 2rem;
             font-size: 1rem;
             strong{
@@ -188,14 +200,15 @@
     
         .details{
             grid-area: details;
-            padding: 0px 44px;
-            width: 407px;
+            padding: 0px 0px;
+            width: 100%;
     
             ul{
                 list-style: none;
                 width: 100%;
                 line-height: 2rem;
                 padding: 0px 0px;
+                margin-top: 2rem;
     
                 li {
                     display: flex;
@@ -225,23 +238,25 @@
                         background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
                         background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
                     }
-    
                 }
             }
-        
+
+
+        }
+        .codesvg{
+            grid-area: codesvg;
+            margin-top: 3rem;
+
+            .imagecode{
+                align-self: center;
+                justify-self: center;
+                width: 300px;
+                height: 300px;
+                padding: 5px;
+            }
         }
 
-        .codesvg{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-             img{
-                display: none;
-                max-width: 86.9%;
-                max-height: 200px;
-                }
-             }
+
         
            
     

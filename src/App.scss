@@ -44,6 +44,7 @@ body {
   background:$white-color;
   will-change: transform, box-shadow, z-index, animation;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .h2{
@@ -122,12 +123,15 @@ p {
 
 // Global spacing styles
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 0px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+  border: 2px solid green;
+ 
+}
+@media screen and (max-width:430px) {
+  .container{
+    width: 95%;
+  }
+  
 }
 
 .flex{

@@ -7,7 +7,7 @@ import Photo from '../Assets/images/ahmed1.jpg'
 const about = () => {
   return (
   <section className='about-section'>
-    <div className='container'>
+  
      <div className='right'>
        
         <div className='about-title'> 
@@ -16,7 +16,7 @@ const about = () => {
         <div className='about-text'>
              <strong>Hello! I’m Ahmed Saifeldeen.</strong> <br />
               <p>
-                a self-taught passionate FrontEnd developer from Sudan, currently working at Palmtree Computers as a FrontEnd engineer. I've been building stuff on the web since when I was in 6th standard, I've made countless side projects
+              I've made the transition from a civil engineering background to a web development career as a front-end specialist a great professional pivot. My journey reflects my determination to embrace change, learn new skills, and navigate the dynamic landscape of technology. Armed with a foundation in civil engineering, I bring a unique perspective to problem solving in web development. This narrative underscores the versatility and adaptability in reshaping my career path and thriving as a front-end developer.
             </p>
         </div>
 
@@ -25,7 +25,7 @@ const about = () => {
               <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
               <li> <strong> <span> Residence: </span> </strong> <span> UAE </span></li>
               <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
-              <li> <strong> <span> Address: </span> </strong> <span> Dubai, USA </span></li>
+              <li> <strong> <span> Address: </span> </strong> <span> Dubai, UAE </span></li>
           </ul>
         </div>
         <div className='codesvg'>
@@ -34,7 +34,7 @@ const about = () => {
 
         </div>
 
-    </div>
+   
     </div>
   </section>
   )

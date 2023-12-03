@@ -14,19 +14,13 @@ $header-font-size: 21px;
         // background: white;
         display: flex;                          
         position: relative;
+        top: 0px;
         width: 100%;
-        height: 100vh;
+        height:100vh;
         align-items: center;
         justify-content: center;
         z-index: 1;
-        &.overlay{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            right:auto;
-            bottom: 0px;
-            background-color: rgb(0, 0, 0,0.6);
-        }
+
 
         .light-right{
             z-index: 1;
@@ -58,29 +52,12 @@ $header-font-size: 21px;
             right: auto;
         }
 
-        // Global style For Head adress
-        // .h2{
- 
-
-        //     &::after{
-        //         display: block;
-        //         height: 2px;
-        //         content: "";
-        //         width: 90%;
-        //         // background-color: #0058d0;
-        //         background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
-        //         background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
-        //         background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
-           
-        //         }
-
-        // }
         .profile{
             z-index: 1;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             height: 100%;
             width: 100%;
@@ -90,7 +67,7 @@ $header-font-size: 21px;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 2em;
+                margin-top: 1em;
                 height: fit-content;
                 width: 400px;
                 overflow: hidden;
@@ -111,7 +88,7 @@ $header-font-size: 21px;
 
             .text{
                 position: relative;
-                height: 50%;
+                height:100%;
                 width: 100%;
                 text-align: center;
                 align-self: center;
@@ -205,14 +182,12 @@ $header-font-size: 21px;
                     // new style
 
                     .btn-1, .btn-2 {
-                        border-radius: .25rem;
+                        border-radius: 5px;
                         text-transform: uppercase;
                         font-style: normal;
                         font-weight: 400;
-                        padding-left: 25px;
-                        padding-right: 25px;
-                        // -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-                        // clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+                        padding-left: 10px;
+                        padding-right: 10px;
                         height: 40px;
                         line-height: 14px;
                         letter-spacing: 1.2px;
@@ -227,7 +202,7 @@ $header-font-size: 21px;
 
                       }
                       .btn-2 {
-                        background-image: linear-gradient(90deg, var(--bs-black), var(--bs-black));
+                        background:$blue-color;
                         color: white;
 
                       }
@@ -235,9 +210,8 @@ $header-font-size: 21px;
                       
                       button:hover {
                         cursor: pointer;
-                        transition: all .3s ease-in;
-                        padding-right: 30px;
-                        padding-left: 30px;
+                        transition: all .3s ease-in-out;
+                        padding: 10px;
                         color: #fff;
                         background-image: linear-gradient(90deg,#1c1c1c,#0d6efd);
 
@@ -256,42 +230,12 @@ $header-font-size: 21px;
 
 }
 
-.codesvg{
-    width: 323px;
-    position: absolute;
-    right: 44px;
-    bottom: 31px;
-    img{
-        width: 100%;
-    }
-}
+
 
 
 
 
 @media screen and (max-width:980px) {   
-    .header-nav .navbar{
-        height: 60px;
-        margin-bottom: 7px;
-        font-family: inherit;
-        font-weight: $font-weight-bold;
-        font-size: $header-font-size;
-
-    }
-
-    .navbar-brand{
-        color: $black-color;
-        font-size: $header-font-size;
-        font-weight: $font-weight-bold;
-
-    }
-
-    .nav-link{
-        color: $black-color;
-        font-size: $header-font-size;
-        font-weight: $font-weight-bold;
-    }
-
 
     .homepage{
         // background-image: url("../Assets/images/background\ \(1\).jpg");
@@ -300,30 +244,23 @@ $header-font-size: 21px;
         // background-attachment: fixed;
         // background-size: cover;
         // background: white;
-        display: flex;                          
+        display: flex;     
+        top: 0px;                     
         position: relative;
         width: 100%;
-        height: 100vh;
-        align-items: center;
+        height: 75vh;
+        align-items: self-start;
         justify-content: center;
-        z-index: 1;
-        &.overlay{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            right:auto;
-            bottom: 0px;
-            background-color: rgb(0, 0, 0,0.6);
-        }
+        z-index: 0;
 
         .light-right{
             z-index: 1;
-            width: 600px;
+            width: 100%;
             height: 100%;
            background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
             // background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);
             opacity: 0.3;
-            margin-top: 40px;
+            margin-top: 0px;
             position: absolute;
             top:auto;
             bottom: 0%;
@@ -333,10 +270,10 @@ $header-font-size: 21px;
 
         .light-left{
             z-index: 1;
-            width: 600px;
+            width: 100%;
             height: 100%;
             background-image: radial-gradient(circle farthest-corner at -10% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);
-            opacity: .3;
+            opacity: 0.3;
             margin-top: -168px;
             margin-left: 0;
             position: absolute;
@@ -346,29 +283,14 @@ $header-font-size: 21px;
             right: auto;
         }
 
-        // Global style For Head adress
-        // .h2{
- 
 
-        //     &::after{
-        //         display: block;
-        //         height: 2px;
-        //         content: "";
-        //         width: 90%;
-        //         // background-color: #0058d0;
-        //         background: -moz-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
-        //         background: -webkit-radial-gradient(left,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
-        //         background: radial-gradient(ellipse at left,#ddd 0%,rgba(255,255,255,0) 70%);
-           
-        //         }
-
-        // }
         .profile{
+            margin-top: 1rem;
             z-index: 1;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            justify-content: center;
+            justify-content: start;
             align-items: center;
             height: 100%;
             width: 100%;
@@ -378,59 +300,32 @@ $header-font-size: 21px;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                margin-top: 2em;
-                height: fit-content;
-                width: 400px;
-                overflow: hidden;
+                height: 100%;
+                width: 297px;
                
               img{
                 position: relative;
                 align-self: center;
-                height: 320px;
-                border-radius: 20px;
-                width: 280px;
+                height: 286px;
+                border-radius: 3px;
+                width: 297px;
                 object-fit: cover;
-                z-index: -3;
-                // clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
+                z-index: 1;
+                clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
               }
 
 
-            }   
+            }    
 
             .text{
                 position: relative;
-                height: 50%;
+                height: 100%;
                 width: 100%;
                 text-align: center;
                 align-self: center;
                 background-color: transparent;
                 color:  $secondary-color !important;
        
-                // &:before{
-                //     content: "";
-                //     position: absolute;
-                //     left: 85%;
-                //     bottom: 37%;
-                //     width: 100%;
-                //     height: 70%;
-                // background-color: transparent;
-                //     // background-color: var(--bs-white);
-                //     transform: rotate(50deg);
-                //     z-index: -1;
-                // }
-
-                // &:after{
-                //     content: "";
-                //     position: absolute;
-                //     left: -89%;
-                //     bottom: 167%;
-                //     width: 100%;
-                //     height: 70%;
-                //     // background-color: white;
-                // background-color: transparent;
-                //     transform: rotate(45deg);
-                //     z-index: -2;
-                // }
 
                 .Name{
                     font-size: 2.5rem;
@@ -492,53 +387,44 @@ $header-font-size: 21px;
                     padding-top: 20px;              
                     // new style
 
-                    button {
-                        border-radius: .25rem;
+                    .btn-1, .btn-2 {
+                        border-radius: 5px;
                         text-transform: uppercase;
                         font-style: normal;
                         font-weight: 400;
-                        padding-left: 25px;
-                        padding-right: 25px;
-                        color: #fff;
-                        -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-                        clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+                        padding-left: 10px;
+                        padding-right: 10px;
                         height: 40px;
-                        font-size: 0.7rem;
                         line-height: 14px;
                         letter-spacing: 1.2px;
                         transition: .2s .1s;
-                        border: 0 solid;
                         overflow: hidden;
-                        background-image: linear-gradient(90deg, var(--bs-black), var(--bs-black));
+                        border: 1px solid #ccc;
                       }
+
+                      .btn-1 {
+                        background:transparent ;
+                        color: #000000;
+
+                      }
+                      .btn-2 {
+                        background:$blue-color;
+                        color: white;
+
+                      }
+
                       
                       button:hover {
                         cursor: pointer;
-                        transition: all .3s ease-in;
-                        padding-right: 30px;
-                        padding-left: 30px;
+                        transition: all .3s ease-in-out;
+                        padding: 10px;
+                        color: #fff;
                         background-image: linear-gradient(90deg,#1c1c1c,#0d6efd);
 
                       }
-
-
-                    // new style end
-
-
-
-                    // .btn-1 ,.btn-2 {    
-                    //     color: #000;
-                    //     background-color: transparent;              
-                    //     transition: all 200ms ease;
-                    //     padding: 0.6rem;
-                    //     border: #198754 solid 1px;
-                    //     width: 50%;
-                    // }
-
-
-                  }
+                    }
     
-                }
+              }
             
 
             }
@@ -546,17 +432,6 @@ $header-font-size: 21px;
 
 
 }
-
-.codesvg{
-    width: 323px;
-    position: absolute;
-    right: 44px;
-    bottom: 31px;
-    img{
-        width: 100%;
-    }
-}
-
 
 
 }   

@@ -10,11 +10,12 @@ const Header = () => {
 const [faBars, setFaBars] = useState(true);
 
   return(
-  <section className='section_nav'>
+    <header className='section_nav'>
       <Navbar className={ `${faBars? "header-nav":"header-navshow"} `} >
-          <Container>
-            <Navbar.Brand href="#home" className="me-0 ps-4 ml-auto navbar" > Ahmed</Navbar.Brand>
-            <Nav className="me-4   left">
+            <Navbar.Brand href="#home" className="navbar" > 
+               Ahmed
+            </Navbar.Brand>
+            <Nav className="">
               <Nav.Link href="#home">About</Nav.Link>
               <Nav.Link href="#features">Services</Nav.Link> 
               <Nav.Link href="#pricing">Contact</Nav.Link>
@@ -22,11 +23,10 @@ const [faBars, setFaBars] = useState(true);
               <div className='FaBars' >
                 <button className='btnbar' onClick={()=>setFaBars(!faBars)}>{ faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}</button>
               </div>
-          </Container>
+       
       </Navbar>
-  </section>
+  </header>
   )
-
 }
 
 export default Header

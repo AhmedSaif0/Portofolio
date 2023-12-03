@@ -17,7 +17,6 @@ const Home = () => {
     <div className='light-right'></div>
     <div className='light-left'></div>
 
-  <div className='container'>
 
   <div className='profile'>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
@@ -46,7 +45,7 @@ const Home = () => {
       </div>
 {/*  */}
   </div>
-  </div>
+
   </section>
 
   )
