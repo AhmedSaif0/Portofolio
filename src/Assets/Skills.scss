@@ -11,7 +11,6 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
     object-fit: cover;
     position: relative;
     width: 100%;
@@ -38,7 +37,6 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
         }
 
      .about-container{
-
             position: relative;
             padding-bottom: 3rem;
             width: 100%;
@@ -66,8 +64,9 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
 
             ul{
               list-style: none;
-              padding-top: 2rem ;
-              gap: 90px;
+              padding-top: 3rem;
+              gap: 65px;
+              padding: 0px 0px;
               li{
                   text-align: center;
                   display: flex;
@@ -140,17 +139,20 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
              }
              .My-skills{
               margin-bottom: 115px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               flex-wrap: wrap;
               flex-direction: row;
               width: 100%;
-              padding: 20px 0px;
              }
       
 
             ul{
               list-style: none;
-              padding: 0px ;
-              gap: 90px;
+              padding-top: 3rem;
+              gap: 65px;
+              padding: 0px 0px;
               li{
                   text-align: center;
                   display: flex;
@@ -168,9 +170,6 @@ $indexes: 1,2,3,4,5; // Define the indexes for each color in the array
 
                     }
                   }
-
-
-
                   strong{
                       font-weight: $font-weight-normal;
                   }

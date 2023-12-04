@@ -2,7 +2,7 @@
 $header-font-size: 21px;
 .section_nav{
     position: sticky;
-    background-color: #008be8;
+    background-color: white;
     top: 0px;
     height: 60px;
     color: #000000;
@@ -30,7 +30,7 @@ $header-font-size: 21px;
     
     .header-nav{
         position: sticky;
-        background: #ccc;
+        background: white;
         flex-wrap: nowrap;
         justify-content: space-around;
         height: 60px;
@@ -38,9 +38,6 @@ $header-font-size: 21px;
         max-width: 1295px;
         z-index: 123;
 
-            // -webkit-box-shadow: 0 0 10px #ddd;
-            // -moz-box-shadow: 0 0 10px #ddd;
-            // box-shadow: 0 0 10px #ddd;
         .left a{
             position: relative;
             font-weight: 400;
@@ -62,9 +59,6 @@ $header-font-size: 21px;
 
         }
     
-        // .header-nav, .navbar{
-        //     font-weight: $font-weight-bold;
-        // }
         .FaBars{
                 display: none;
         }
@@ -79,7 +73,7 @@ $header-font-size: 21px;
 
     .section_nav{   
         position: sticky;
-        background-color: #008be8;
+        background-color: white;
         top: 0px;
         height: 60px;
         color: #000000;
@@ -87,27 +81,16 @@ $header-font-size: 21px;
         width: 100%;
         max-width: 1295px;
         z-index: 123;
-    
-    
-        // .navbar-expand {
-        //     position: fixed !important;
-        //     flex-wrap: wrap;
-        //     justify-content: flex-start;
-        //     z-index: 123;
-        
-        // }
         
         .navbar-brand{
             color: $black-color;
             font-size: $header-font-size;
             font-weight: $font-weight-bold;
         }
-        
-        
-        
+
         .header-nav{
             position: sticky;
-            background: #ccc;
+            background: white;
             flex-wrap: nowrap;
             justify-content: space-around;
             height: 60px;
@@ -115,9 +98,6 @@ $header-font-size: 21px;
             max-width: 1295px;
             z-index: 123;
     
-                // -webkit-box-shadow: 0 0 10px #ddd;
-                // -moz-box-shadow: 0 0 10px #ddd;
-                // box-shadow: 0 0 10px #ddd;
             .left a{
                 position: relative;
                 font-weight: 400;
@@ -136,12 +116,8 @@ $header-font-size: 21px;
                     transition: $main-transition;
                 }
         
-    
             }
-        
-            // .header-nav, .navbar{
-            //     font-weight: $font-weight-bold;
-            // }
+
             .FaBars{
                     display: none;
             }

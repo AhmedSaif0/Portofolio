@@ -10,9 +10,6 @@ import Services from './Components/Services';
 
 
 function App() {
-
-
-
   return (
     <div className='container'>
         <Header/> 

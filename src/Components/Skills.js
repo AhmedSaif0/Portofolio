@@ -10,7 +10,7 @@ import {TbBrandJavascript} from 'react-icons/tb'
 const Skills = () => {
   return (
     <div className='skills-page'>
-      <div className='container about-container'>
+      <div className='about-container flex'>
       <h2 className='h2'>My Skillsets</h2>
         <div className='My-skills flex'>
           <ul className='flex'>
@@ -21,13 +21,7 @@ const Skills = () => {
             <li> <span className='skill-icon-1'> <FaReact/> </span><br/><strong> <span> React js </span> </strong> </li>
           </ul>
         </div>
-
       </div>
-
-
-
-
-
     </div>
   )
 }

@@ -34,7 +34,7 @@ const Projects = () => {
 
   return (
     <div className='proj-page'>
-      <div className='container porj-container'>
+      <div className='porj-container'>
         <div className='Side-Projects'><h2 className='h2'>Side Projects</h2></div>
 
       {
