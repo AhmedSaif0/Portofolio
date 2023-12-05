@@ -10,7 +10,7 @@ import support from '../Assets/images/support.jpg'
 
 const Services = () => {
   return (
-<section className='sevices '>    
+<section className='sevices container '>    
     <div className='serv-container flex'>
         <h2 className='h2 serv' >My Services</h2>
         <div className='My-Serv flex'>

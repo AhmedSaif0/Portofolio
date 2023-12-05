@@ -6,7 +6,7 @@ import Photo from '../Assets/images/ahmed1.jpg'
 
 const about = () => {
   return (
-  <section className='about-section'>
+  <section className='about-section container'>
      <div className='right'>
         <div className='about-title'> 
           <h2 className='h2 about'>About Me</h2>

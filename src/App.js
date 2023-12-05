@@ -11,7 +11,7 @@ import Services from './Components/Services';
 
 function App() {
   return (
-    <div className='container'>
+    <div >
         <Header/> 
         <Home/>
         <About/>

@@ -15,7 +15,7 @@ const [faBars, setFaBars] = useState(true);
             <Navbar.Brand href="#home" className="navbar" > 
                Ahmed
             </Navbar.Brand>
-            <Nav className="">
+            <Nav className="nav-links">
               <Nav.Link href="#home">About</Nav.Link>
               <Nav.Link href="#features">Services</Nav.Link> 
               <Nav.Link href="#pricing">Contact</Nav.Link>

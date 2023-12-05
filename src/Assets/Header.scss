@@ -8,7 +8,7 @@ $header-font-size: 21px;
     color: #000000;
     overflow: hidden;
     width: 100%;
-    max-width: 1295px;
+    max-width: 100%;
     z-index: 123;
 
 
@@ -35,10 +35,10 @@ $header-font-size: 21px;
         justify-content: space-around;
         height: 60px;
         width: 100%;
-        max-width: 1295px;
+        max-width: 100%px;
         z-index: 123;
 
-        .left a{
+        .nav-links a{
             position: relative;
             font-weight: 400;
             display: flex;  
