@@ -1,9 +1,5 @@
 @import'../App.scss';
 @import'../Assets/Home.scss';
-  
- // Define an array of colors
-$indexes: 1,2,3,4,5; // Define the indexes for each color in the array
-// Create a mixin to generate the CSS styles based on the index and color values passed as parameters
 
   .skills-page{
     position: relative;

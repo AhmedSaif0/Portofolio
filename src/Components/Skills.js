@@ -12,7 +12,7 @@ const Skills = () => {
     <div className='skills-page'>
       <div className='about-container flex'>
       <h2 className='h2'>My Skillsets</h2>
-        <div className='My-skills flex'>
+        <div className='My-skills flex container'>
           <ul className='flex'>
             <li> <span className='skill-icon-1'> <AiOutlineHtml5 /> </span><br/><strong> <span> Html</span> </strong> </li>
             <li> <span className='skill-icon-1'> <LiaCss3/> </span><br/><strong> <span> Css </span> </strong> </li>

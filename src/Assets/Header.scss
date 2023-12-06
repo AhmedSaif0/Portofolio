@@ -86,24 +86,36 @@ $header-font-size: 21px;
             color: $black-color;
             font-size: $header-font-size;
             font-weight: $font-weight-bold;
+            padding-left:20px;
         }
 
         .header-nav{
             position: sticky;
-            background: white;
-            flex-wrap: nowrap;
-            justify-content: space-around;
-            height: 60px;
+            display: flex;
+            background: var(--bs-gray-100);
+            flex-wrap: wrap;
+            height: auto;
             width: 100%;
-            max-width: 1295px;
+            max-width: 100% ;
             z-index: 123;
+            align-content: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: flex-start;
     
             .left a{
                 position: relative;
                 font-weight: 400;
                 display: flex;  
-                justify-content: center;
-                align-items: center;
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                max-width: 100% ;
+                z-index: 123;
+                align-content: flex-start;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
                 gap: 5px;
                 color: $black-color;
                 width: 98px;
@@ -118,8 +130,28 @@ $header-font-size: 21px;
         
             }
 
+            .header-navshow{
+                position: relative;
+                font-weight: 400;
+                display: flex;  
+                flex-wrap: wrap;
+                height: auto;
+                width: 100%;
+                max-width: 100% ;
+                z-index: 123;
+                align-content: flex-start;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 5px;
+                color: $black-color;
+                width: 98px;
+                height: 55px;
+                text-align: center;
+            }
+
             .FaBars{
-                    display: none;
+                display: none;
             }
         }
         
