@@ -2,7 +2,7 @@
 
 .about-section{
     background-color: $white1-color;
-    height: 90vh;
+    height: fit-content;
 }
 
 .right {
@@ -16,13 +16,14 @@
     // box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     height: 550px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 70px 1fr 70px 1fr;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 70px 1fr  ;
     grid-template-areas:
                             "about about"
-                            "about-text about-text "
-                            "details details" ;
-    
+                            "about-text details" ;
+
+
+
     .about-title {
         grid-area: about;
         position: relative;
@@ -31,7 +32,6 @@
         justify-content: center;
         align-items: center;
 
-   
     h2{
         position: relative;
         width: fit-content;
@@ -46,8 +46,7 @@
             color: $blue-color;
         }
     }
-    }
-
+ }
 
     .serv{
         grid-area: my-serv;
@@ -57,9 +56,10 @@
         grid-area: about-text;
         text-align: start;
         font-weight: 500;
-        padding:0px 44px;
+        padding: 0px 44px;
         padding-top: 2rem;
         font-size: 1rem;
+        width: 700px;
         strong{
             font-weight: $font-weight-light;
             font-size: 1.2rem;
@@ -75,7 +75,8 @@
     .details{
         grid-area: details;
         padding: 0px 44px;
-        width: 407px;
+        width: 450px;
+        margin-top: 5rem;
 
         ul{
             list-style: none;
@@ -150,8 +151,7 @@
         grid-template-areas:
             "about "
             "about-text "
-            "details "
-            "codesvg ";
+            "details";
         
   .about-title {
             position: relative;
@@ -183,9 +183,10 @@
             grid-area: about-text;
             text-align: start;
             font-weight: 500;
-            padding:0px 0px;
+            padding: 0px 0px;
             padding-top: 2rem;
             font-size: 1rem;
+            width: 100%;
             strong{
                 font-weight: $font-weight-normal;
                 font-size: 1.2rem;
@@ -202,6 +203,7 @@
             grid-area: details;
             padding: 0px 0px;
             width: 100%;
+            margin: 1rem 0rem;
     
             ul{
                 list-style: none;
@@ -240,8 +242,6 @@
                     }
                 }
             }
-
-
         }
         .codesvg{
             grid-area: codesvg;

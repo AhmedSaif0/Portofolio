@@ -25,9 +25,9 @@ const about = () => {
               <li> <strong> <span> Address: </span> </strong> <span> Dubai, UAE </span></li>
           </ul>
         </div>
-         <div className='codesvg'>
+         {/* <div className='codesvg'>
           <img className="imagecode" src={codesvg} alt=''/>
-         </div>
+         </div> */}
     </div>
   </section>
   )
