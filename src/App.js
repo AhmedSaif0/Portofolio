@@ -7,6 +7,7 @@ import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import './App.scss';
 import Services from './Components/Services';
+import Contact from './Components/Contac';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Skills/>
         <Services/>
         <Projects/>
+        <Contact/>
     </div>
   );
 }
