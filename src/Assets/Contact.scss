@@ -1,0 +1,16 @@
+@import '../App.scss';
+
+
+.contact-sec{
+    margin-top: 3rem;
+    .h2{
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .btn-primary{
+        
+        background-color: $blue-color;
+    }
+
+}
