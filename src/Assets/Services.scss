@@ -1,4 +1,7 @@
 @import '../App.scss';
+$colors:(#3cd63336, #0d6efd78, #f440365e) ;
+$colors2:(#3bd633cc, #0d6dfdd1, #f43f36c2) ;
+
 $header-font-size: 21px;
 .sevices{
     display: flex;
@@ -9,8 +12,8 @@ $header-font-size: 21px;
     padding: auto 100px; 
     background-color: $white1-color;
     z-index: 1;
-
 }
+
 .serv-container{
   .h2{
     margin-top: 3rem !important;
@@ -117,6 +120,9 @@ $header-font-size: 21px;
                           width: 70%;
                         }
                       }
+                      .btn{
+                        font-weight: 500;
+                      }
                   }
 
 
@@ -132,11 +138,20 @@ $header-font-size: 21px;
                     transition: $main-transition;
                     will-change: transform, box-shadow, z-index;
                   }
+
+                  @for $i from 1 through length($colors2){
+                    &:hover:nth-child(#{$i}) div:nth-of-type(2){
+                    .btn{
+                        border: 1px solid #ccc;
+                        color: white;
+                        background-color:nth($colors2, $i) !important;
+                      }
+                    }
+                  }
           }
           
           // loop to apply color for sevice card ellements
 
-          $colors:(#3cd63336, #0d6efd78, #f440365e) ;
 
           @for $i from 1 through length($colors){
             li:nth-child(#{$i}) div:first-of-type{
@@ -150,6 +165,8 @@ $header-font-size: 21px;
                 background-color:nth($colors, $i) !important;
               }
             }
+
+
           }
       }
  }

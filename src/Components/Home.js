@@ -12,7 +12,7 @@ import Particlesbg from './libarareis/Particlesbg'
 const Home = () => {
   return (
     
-  <section className='homepage '>
+  <section className='homepage ' id='home'>
     {/* {<Particlesbg />} */}
     <div className='light-right'></div>
     <div className='light-left'></div>

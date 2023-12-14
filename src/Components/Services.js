@@ -10,7 +10,7 @@ import support from '../Assets/images/support.jpg'
 
 const Services = () => {
   return (
-<section className='sevices container '>    
+<section className='sevices container ' id='services'>    
     <div className='serv-container flex'>
         <h2 className='h2 serv' >My Services</h2>
         <div className='My-Serv flex'>
@@ -22,12 +22,30 @@ const Services = () => {
                 <div className='strong flex'>
                   <strong className='flex'>
                      <span> Frontend Development </span>
+                     <button className='btn'>More</button>
                   </strong> 
                 </div>
             </li>
             
-            <li> <div> <img src={social} alt=''/> </div><div className='strong flex'><strong className='flex'> <span> Social Media Integration </span> </strong> </div></li>
-            <li> <div> <img src={support}alt='' /> </div><div className='strong flex'><strong className='flex'> <span> Maintenance and Support </span> </strong> </div></li>
+            <li> 
+              <div> <img src={social} alt=''/> </div>
+                <div className='strong flex'>
+                <strong className='flex'>
+                   <span> Social Media Integration </span>
+                   <button className='btn'>More</button>
+                </strong>
+               </div>
+            </li>
+
+            <li>
+              <div> <img src={support}alt='' /> </div>
+               <div className='strong flex'>
+                 <strong className='flex'> 
+                  <span> Maintenance and Support </span>
+                  <button className='btn'>More</button>
+                 </strong> 
+              </div>
+              </li>
           </ul>
         </div>
     </div>

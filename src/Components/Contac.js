@@ -30,9 +30,9 @@ const Contact = () => {
   };
 
   return (
-    <section className='container contact-sec'>
+    <section className='container contact-sec' id='contact'>
       <h2 className='h2'>Get in touch</h2>
-    <form className="container mt-5" onSubmit={handleSubmit}>
+    <form className="container mt-5 col-lg-6 col-md-6 " onSubmit={handleSubmit}>
 
 
     <div className="mb-3">

@@ -16,9 +16,9 @@ const [faBars, setFaBars] = useState(true);
                Ahmed
             </Navbar.Brand>
             <Nav className="nav-links">
-              <Nav.Link href="#home">About</Nav.Link>
-              <Nav.Link href="#features">Services</Nav.Link> 
-              <Nav.Link href="#pricing">Contact</Nav.Link>
+              <Nav.Link href="#about">About</Nav.Link>
+              <Nav.Link href="#services">Services</Nav.Link> 
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
               <div className='FaBars' >
                 <button className='btnbar' onClick={()=>setFaBars(!faBars)}>{ faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}</button>
