@@ -16,7 +16,7 @@ $header-font-size: 21px;
         position: relative;
         top: 0px;
         width: 100%;
-        height:85vh;
+        height:100vh;
         align-items: center;
         justify-content: center;
         z-index: 1;
@@ -53,53 +53,47 @@ $header-font-size: 21px;
         }
 
         .profile{
-          z-index: 1;
-          display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          height: 100%;
-          width: 100%;
-          align-content: space-around;
-          justify-content: center;
+            z-index: 1;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            width: 100%;
 
             .photo{
-              display: flex;
-              justify-content: space-around;
-              align-items: center;
-              flex-direction: row-reverse;
-              margin-top: 1em;
-              height: -moz-fit-content;
-              height: fit-content;
-              width: 80%;
-              overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 1em;
+                height: fit-content;
+                width: 400px;
+                overflow: hidden;
                
               img{
                 position: relative;
                 align-self: center;
-                height: 100%;
-                border-radius: 0%;
-                width: 38%;
+                height: 286px;
+                border-radius: 3px;
+                width: 297px;
                 object-fit: cover;
                 z-index: 1;
                 clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
               }
 
+
             }   
 
             .text{
-              position: relative;
-              display: flex;
-              height: 100%;
-              width: 360px;
-              text-align: center;
-              align-self: center;
-              background-color: transparent;
-              color: #6c757d !important;
-              flex-direction: column;
-              align-content: flex-start;
-              flex-wrap: nowrap;
-              justify-content: space-between;
-              align-items: flex-start;
+                position: relative;
+                height:100%;
+                width: 100%;
+                text-align: center;
+                align-self: center;
+                background-color: transparent;
+                color:  $secondary-color !important;
 
                 .Name{
                     font-size: 2.5rem;
@@ -152,13 +146,13 @@ $header-font-size: 21px;
                 }
 
                 .btn-container{ 
-                  position: relative;
-                  bottom: 0px;
-                  display: flex;
-                  width: 100%;
-                  flex-wrap: wrap;
-                  justify-content: flex-start;
-                  padding-top: 20px;            
+                    position: relative;
+                    bottom: 0px;
+                    display: flex;
+                    width: 100%;
+                    flex-wrap: wrap;
+                    justify-content: space-around;  
+                    padding-top: 20px;              
                     // new style
 
                     .btn-1, .btn-2 {
