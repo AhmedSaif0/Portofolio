@@ -18,7 +18,7 @@ const Home = () => {
     <div className='light-left'></div>
 
 
-  <div className='profile'>
+  <div className='profile '>
       <div className='photo radius'><img className='my-img' src={Photo} alt='ahmedsaif'/>
       <div className='text'>
         <p className="hello">Hello, I’m</p>
@@ -31,11 +31,11 @@ const Home = () => {
             </ul>
           </div>
           <div className="btn-container">
-
+{/* 
             <button className="btn btn-1"
               onclick="window.open('./assets/resume-example.pdf')">
                Download CV
-            </button>
+            </button> */}
             <button className="btn btn-2">
                Contact ME
             </button>

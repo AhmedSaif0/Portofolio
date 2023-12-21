@@ -30,11 +30,10 @@ const Contact = () => {
   };
 
   return (
-    <section className='container contact-sec' id='contact'>
+    <section className=' contact-sec' id='contact'>
+      <div className='container'>
       <h2 className='h2'>Get in touch</h2>
     <form className="container mt-5 col-lg-6 col-md-6 " onSubmit={handleSubmit}>
-
-
     <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name:
@@ -83,6 +82,7 @@ const Contact = () => {
         Send
       </button>
     </form>
+    </div>
     </section>
   );
 };

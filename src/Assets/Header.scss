@@ -2,23 +2,18 @@
 $header-font-size: 21px;
 .section_nav{
     position: sticky;
-    background-color: white;
+    background-color: transparent;
     top: 0px;
     height: 60px;
-    color: #000000;
+    color: $black-color;
     overflow: hidden;
     width: 100%;
     max-width: 100%;
     z-index: 123;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    backdrop-filter: blur(20px);
 
 
-    // .navbar-expand {
-    //     position: fixed !important;
-    //     flex-wrap: wrap;
-    //     justify-content: flex-start;
-    //     z-index: 123;
-    
-    // }
     
     .navbar-brand{
         color: $black-color;
@@ -30,7 +25,7 @@ $header-font-size: 21px;
     
     .header-nav{
         position: sticky;
-        background: white;
+        background: transparent;
         flex-wrap: nowrap;
         justify-content: space-around;
         height: 60px;

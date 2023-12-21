@@ -7,16 +7,57 @@
     z-index: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+
+    .light-right{
+        z-index: 1;
+        width: 600px;
+        height: 100%;
+       background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
+        opacity: 0.3;
+        margin-top: 40px;
+        position: absolute;
+        top:auto;
+        bottom: 0%;
+        left: auto;
+        right: 0%;
+    }
+
+    .light-left{
+        z-index: 1;
+        width: 600px;
+        height: 100%;
+        background-image: radial-gradient(circle farthest-corner at -10% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);
+        opacity: .3;
+        margin-top: -168px;
+        margin-left: 0;
+        position: absolute;
+        top: auto;
+        bottom: 0%;
+        left: 0%;
+        right: auto;
+    }
+
+    @media screen and (max-width:600px) {
+
+    
+    .light-left{   
+    width: 100%;    
+    }
+
+    .light-right{
+        width: 100%;
+    }
+}
  
     .porj-container{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: start;
         gap: 20px;
-        height: 100%;
+        height: auto;
         padding: 0px 0px;
         .Side-Projects{
             width: 100%;
@@ -43,7 +84,6 @@
 }
 
 @media screen and (max-width:980px) {
-
 
     .proj-page{
         position: relative;

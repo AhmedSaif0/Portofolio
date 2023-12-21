@@ -1,6 +1,8 @@
 import React from 'react'
 import '../Assets/Projects.scss'
+import '../Assets/Home.scss'
 import Project from './Project'
+
 // import imag from '../Assets/images/bty.png'
 // import imag1 from '../Assets/images/van.png'
 // import imag2 from '../Assets/images/expenses.png'
@@ -33,8 +35,11 @@ const Projects = () => {
   }]
 
   return (
-    <div className='proj-page container'>
-      <div className='porj-container'>
+    <div className='proj-page '>
+    <div className='light-right'></div>
+    <div className='light-left'></div>
+
+      <div className='porj-container container'>
         <div className='Side-Projects'><h2 className='h2'>Side Projects</h2></div>
 
       {
