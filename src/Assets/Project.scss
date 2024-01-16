@@ -73,12 +73,26 @@
   padding: 20px;
   color: #fff;
   box-sizing: border-box;
-  background-color: rgb(14 42 62 / 70%);
-  flex-direction: row;
+  background-color: rgb(14 42 62 / 88%);
+  flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  &a{
+    text-decoration: none;
+  }
+ & a:visited {
+    color: white;
+  }
+  .card_btn_container{
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+  }
 }
 
 .project_card:hover .card__content {

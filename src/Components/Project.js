@@ -4,7 +4,7 @@ import '../Assets/Project.scss'
 import '../Assets/Services.scss'
 
 
-const Project = ({key,image,title,description}) => {
+const Project = ({key,image,title,description,href}) => {
   return (
         <div className='project_card' key={key}>
       
@@ -17,12 +17,16 @@ const Project = ({key,image,title,description}) => {
                 <div className="card__content">
                     <p className="card__title">{title}</p>
                     <p className="card__description">{description}</p>
-                    <button className="card__button">Live Demo</button>
-                    <button className="card__button secondary">Source Code</button>
+                    <div className='card_btn_container'>
+                      <button className="card__button" >
+                        <a href={href} target="_blank" style={{textDecoration:"none"}}>Live Demo</a>
+                      </button>
+                      <button className="card__button secondary">Source Code</button>
+                    </div>
+
                 </div>
         </div>
 
- 
   )
 }
 

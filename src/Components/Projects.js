@@ -17,6 +17,7 @@ const Projects = () => {
     title: "Battery Test",
     description:"web application tracking laptop battery discharging",
     image : imag2 ,
+    href:"https://batterytest.netlify.app/"
 
   },
   {
@@ -24,6 +25,7 @@ const Projects = () => {
     title: "Van life",
     description:"Car rental website",
     image : imag1 ,
+    href:"https://vanlive.netlify.app"
 
   },
   {
@@ -31,6 +33,7 @@ const Projects = () => {
     title: "Expenses Traker",
     description:"tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
     image : imag ,
+    href:"https://expensetracker90.netlify.app"
 
   }]
 
@@ -38,7 +41,6 @@ const Projects = () => {
     <div className='proj-page '>
     <div className='light-right'></div>
     <div className='light-left'></div>
-
       <div className='porj-container container'>
         <div className='Side-Projects'><h2 className='h2'>Side Projects</h2></div>
 
@@ -48,11 +50,11 @@ const Projects = () => {
                       title= {x.title}
                       description = {x.description}
                       image = {x.image}
+                      href={x.href}
                     />
 
           ) )
         }
-
 
         </div>
       </div>
