@@ -1,5 +1,7 @@
 @import '../App.scss';
+
 $header-font-size: 21px;
+
 .section_nav{
     position: sticky;
     background-color: transparent;
@@ -23,14 +25,14 @@ $header-font-size: 21px;
     
     
     
-    .header-nav{
+    .header-big{
         position: sticky;
         background: transparent;
         flex-wrap: nowrap;
         justify-content: space-around;
         height: 60px;
         width: 100%;
-        max-width: 100%px;
+        max-width: 100%;
         z-index: 123;
 
         .nav-links a{
@@ -50,8 +52,6 @@ $header-font-size: 21px;
                 color:$white1-color;
                 transition: $main-transition;
             }
-    
-
         }
     
         .FaBars{
@@ -62,55 +62,64 @@ $header-font-size: 21px;
     .me-auto  {
     justify-content: end !important;
     }
+}
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:600px) {
 
-    .section_nav{   
+    .section_nav{
         position: sticky;
-        background-color: white;
+        background-color:transparent;
         top: 0px;
         height: 60px;
-        color: #000000;
+        color: $black-color;
         overflow: hidden;
         width: 100%;
-        max-width: 1295px;
+        max-width: 100%;
         z-index: 123;
+        box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        backdrop-filter: blur(20px);
+    
+    
         
         .navbar-brand{
             color: $black-color;
             font-size: $header-font-size;
             font-weight: $font-weight-bold;
-            padding-left:20px;
         }
-
-        .header-nav{
+        
+        .header-small{
             position: sticky;
+            background: rgb(117, 94, 94);
             display: flex;
-            background: var(--bs-gray-100);
-            flex-wrap: wrap;
-            height: auto;
-            width: 100%;
-            max-width: 100% ;
-            z-index: 123;
-            align-content: flex-start;
-            justify-content: space-between;
             flex-direction: column;
-            align-items: flex-start;
+            flex-wrap: nowrap;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            z-index: 124;
     
-            .left a{
+        }
+        
+        .header-big{
+            position: sticky;
+            background: transparent;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            height: 60px;
+            width: 100%;
+            max-width: 100%;
+            z-index: 123;
+    
+            .nav-links a{
                 position: relative;
                 font-weight: 400;
-                display: flex;  
-                flex-wrap: wrap;
-                height: auto;
-                width: 100%;
-                max-width: 100% ;
-                z-index: 123;
-                align-content: flex-start;
-                justify-content: space-between;
-                flex-direction: column;
-                align-items: flex-start;
+                display: none;  
+                justify-content: center;
+                align-items: center;
                 gap: 5px;
                 color: $black-color;
                 width: 98px;
@@ -124,33 +133,15 @@ $header-font-size: 21px;
                 }
         
             }
-
-            .header-navshow{
-                position: relative;
-                font-weight: 400;
-                display: flex;  
-                flex-wrap: wrap;
-                height: auto;
-                width: 100%;
-                max-width: 100% ;
-                z-index: 123;
-                align-content: flex-start;
-                justify-content: space-between;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5px;
-                color: $black-color;
-                width: 98px;
-                height: 55px;
-                text-align: center;
-            }
-
+        
             .FaBars{
-                display: none;
+                    display: block;
             }
         }
         
-
+        .me-auto  {
+        justify-content: end !important;
+        }
+    
     }
-}
 }

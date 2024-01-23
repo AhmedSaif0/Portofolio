@@ -8,10 +8,9 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 const Header = () => {
 
 const [faBars, setFaBars] = useState(true);
-
   return(
     <header className='section_nav'>
-      <Navbar className={ `${faBars? "header-nav":"header-navshow"} `} >
+      <Navbar className={ `${faBars? "header-big":"header-small"} `} >
             <Navbar.Brand href="#home" className="navbar" > 
                Ahmed
             </Navbar.Brand>
@@ -21,9 +20,12 @@ const [faBars, setFaBars] = useState(true);
               <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
               <div className='FaBars' >
-                <button className='btnbar' onClick={()=>setFaBars(!faBars)}>{ faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}</button>
+                <button 
+                    className='btnbar' 
+                    onClick={()=>setFaBars(!faBars)}>
+                    { faBars ?  (<><FaBars size={25}/></>):(<><FaTimes size={25}/></>)}
+                </button>
               </div>
-       
       </Navbar>
   </header>
   )
