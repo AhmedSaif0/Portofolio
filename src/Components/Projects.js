@@ -38,7 +38,7 @@ const Projects = () => {
   }]
 
   return (
-    <div className='proj-page '>
+    <div className='proj-page ' id='projects'>
     <div className='light-right'></div>
     <div className='light-left'></div>
       <div className='porj-container container'>

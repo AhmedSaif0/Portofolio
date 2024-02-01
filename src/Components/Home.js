@@ -26,8 +26,8 @@ const Home = () => {
           <h3 className='title'>Web Developer </h3>
           <div className="socials">
             <ul >
-            <li><a href="#"><BsLinkedin/></a></li>
-            <li><a href="#"><BsGithub/></a></li>
+            <li><a href="https://linkedin.com/in/ahmed-saif0"><BsLinkedin/></a></li>
+            <li><a href="https://github.com/AhmedSaif0"><BsGithub/></a></li>
             </ul>
           </div>
           <div className="btn-container">
@@ -36,7 +36,7 @@ const Home = () => {
               onclick="window.open('./assets/resume-example.pdf')">
                Download CV
             </button> */}
-            <button className="btn btn-2">
+            <button className="btn btn-2" onClick={ ()=> window.location.href = '#contact'}>
                Contact ME
             </button>
 
