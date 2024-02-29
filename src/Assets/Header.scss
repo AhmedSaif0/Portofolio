@@ -12,7 +12,7 @@ $header-font-size: 21px;
     z-index: 123;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
     backdrop-filter: blur(20px);
-}
+
 
     
     .navbar-brand{
@@ -21,44 +21,37 @@ $header-font-size: 21px;
         font-weight: $font-weight-bold;
     }
     
-    
-    
-    .sticky-toip{
-        position: sticky;
-        background: transparent;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        height: 60px;
-        width: 100%;
-        max-width: 100%;
-        z-index: 123;
 
         .nav-links a{
             position: relative;
             font-weight: 400;
-            display: flex;  
+            display: flex;
             justify-content: center;
             align-items: center;
-            gap: 5px;
+            text-decoration: none;
             color: $black-color;
             width: 98px;
-            height: 55px;
+            height: 60px;
             text-align: center;
             &:Hover{
-   
                 background-color: #008be8;
                 color:$white1-color;
                 transition: $main-transition;
+            }
+        }
+
+        @media screen and (max-width: 920px) {
+        
+            .nabar-collapse{
+                justify-content: center;
+                background-color: aqua;
             }
         }
     
         .FaBars{
                 display: none;
         }
-    }
+ 
     
-    .me-auto  {
-    justify-content: end !important;
-    }
 
-
+}
