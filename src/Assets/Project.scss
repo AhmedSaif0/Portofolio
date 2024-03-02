@@ -78,7 +78,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  &a{
+  & a{
+    color: white;
     text-decoration: none;
   }
  & a:visited {
