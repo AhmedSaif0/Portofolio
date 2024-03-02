@@ -2,15 +2,7 @@
 
 $header-font-size: 21px;
 
-
-
-
 .homepage{
-        // background-image: url("../Assets/images/background\ \(1\).jpg");
-        // background-repeat: no-repeat;
-        // background-position: center;    
-        // background-attachment: fixed;
-        // background-size: cover;
         background: white;
         display: flex;                          
         position: relative;
@@ -20,14 +12,13 @@ $header-font-size: 21px;
         align-items: center;
         justify-content: center;
         z-index: 1;
-        scroll-margin-top: 50px;
-
-
+        margin-top: 0px;
+        scroll-margin-top:70px;
         .light-right{
             z-index: 1;
             width: 600px;
             height: 100%;
-           background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
+            background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
             opacity: 0.3;
             margin-top: 40px;
             position: absolute;

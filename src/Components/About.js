@@ -14,7 +14,13 @@ const about = () => {
         <div className='about-text'>
              <strong>I’m Ahmed Saifeldeen.</strong> <br />
               <p>
-              I've made the transition from a civil engineering background to a web development career as a front-end specialist a great professional pivot. My journey reflects my determination to embrace change, learn new skills, and navigate the dynamic landscape of technology. Armed with a foundation in civil engineering, I bring a unique perspective to problem solving in web development. This narrative underscores the versatility and adaptability in reshaping my career path and thriving as a front-end developer.
+                I've made the transition from a civil engineering background to a career in web development, 
+                specializing in front-end development. This professional pivot has been a great journey,
+                reflecting my determination to embrace change, learn new skills,
+                and navigate the dynamic landscape of technology.
+                With a foundation in civil engineering, I bring a unique perspective to problem-solving in web development. 
+                This narrative underscores the versatility and adaptability required to
+                reshape my career path and thrive as a front-end developer.
             </p>
         </div>
         <div className='details'>

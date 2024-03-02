@@ -4,6 +4,7 @@ $colors2:(#3bd633cc, #0d6dfdd1, #f43f36c2) ;
 
 $header-font-size: 21px;
 .sevices{
+  scroll-margin-top:70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -12,6 +13,7 @@ $header-font-size: 21px;
     padding: auto 100px; 
     background-color: $white1-color;
     z-index: 1;
+    height: 90vh;
 }
 
 .serv-container{
