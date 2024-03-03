@@ -5,9 +5,9 @@ import Home from './Components/Home';
 import About from './Components/About';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
-import './App.scss';
-import Services from './Components/Services';
-import Contact from './Components/Contac';
+import './App.scss'
+import Contact from './Components/Contac'
+import Allservices from  './Components/Allservices'
 
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Home/>
         <About/>
         <Skills/>
-        <Services/>
+        <Allservices/>
         <Projects/>
         <Contact/>
     </div>
