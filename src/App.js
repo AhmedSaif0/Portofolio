@@ -8,6 +8,7 @@ import Projects from './Components/Projects';
 import './App.scss'
 import Contact from './Components/Contac'
 import Allservices from  './Components/Allservices'
+import { Timeline } from './Components/Timeline';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Home/>
         <About/>
         <Skills/>
+        <Timeline />
         <Allservices/>
         <Projects/>
         <Contact/>

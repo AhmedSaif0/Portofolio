@@ -13,10 +13,11 @@ $header-font-size: 21px;
     padding: auto 100px; 
     background-color: $white1-color;
     z-index: 1;
-    height: 90vh;
+    height: auto;
 }
 
 .serv-container{
+  margin-bottom:3rem;
   .h2{
     margin-top: 3rem !important;
     position: relative;
@@ -89,7 +90,13 @@ $header-font-size: 21px;
                     will-change: transform, box-shadow, z-index;
                   }
                 }
-
+                .title_div{
+                  display: flex;
+                  height: 50%;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  flex-direction: column;
+                }
                 .strong{
                   position: relative;
                   bottom: 0;

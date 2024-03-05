@@ -1,0 +1,44 @@
+@import '../App.scss';
+
+.timeline{
+position: relative;
+background-color: $background-silver;
+z-index: -15;
+.light-right{
+    z-index: -2;
+    width: 600px;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 130% 50%, #282828, #198754 0%, rgba(0, 74, 252, 0) 70%);
+    opacity: 0.3;
+    margin-top: 40px;
+    position: absolute;
+    top:auto;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+}
+
+.light-left{
+    z-index: -2;
+    width: 600px;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at -60% 50%, #282828, var(--bs-link-color) 0%, rgba(0, 74, 252, 0) 75%);    opacity: .3;
+    margin-top: -168px;
+    margin-left: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+}
+}
+
+.vertical-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 18px;
+    height: 100%;
+    width: 4px;
+    background: $black-color !important;
+}

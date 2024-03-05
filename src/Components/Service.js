@@ -23,7 +23,7 @@ const Service = ({image,dis,title}) => {
                   <img src={image} alt=' '/>
                 </div>
                   {  
-                    show ? <div>
+                    show ? <div className='title_div flex'>
                               <strong className='title flex'>
                                 <span> {title} </span>
                                 <button className='btn' onClick={showdiscrition}>More</button>
