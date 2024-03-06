@@ -169,6 +169,9 @@ $header-font-size: 21px;
                   animation: fadeInLeft;
                   animation-duration: 0.5s;
                   & p{
+                    overflow-y: auto;
+                    overflow-x: hidden;
+                    height: 25em;
                       display: flex;
                       justify-content: normal;
                       padding: 18px;
