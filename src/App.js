@@ -6,7 +6,7 @@ import About from './Components/About';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
 import './App.scss'
-import Contact from './Components/Contac'
+import Contact from './Components/Contact'
 import Allservices from  './Components/Allservices'
 import { Timeline } from './Components/Timeline';
 

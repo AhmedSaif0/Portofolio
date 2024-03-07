@@ -16,7 +16,6 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 
-
 const workIcon = {
   icon: <FontAwesomeIcon icon={faBriefcase} />,
   iconStyle: { background: 'rgb(33, 150, 243)', color: '#fff' },
@@ -34,45 +33,24 @@ export const Timeline = () => {
   const timeline = [
     {
       icon: workIcon,
+      date: 'june/2022 - present',
+      title: 'IT suport',
+      subtitle: 'Palmtree Computers',
+      desc: `created some web aplications and shell scripts to help in porduction line,\ntroubleshooted and resolved a wide array of technical issues.`,
+    },
+    {
+      icon: workIcon,
       date: '2011 - present',
       title: 'Creative Director',
       subtitle: 'Miami, FL',
       desc: 'Creative Direction, User Experience, Visual Design, Project Management, Team Leading',
     },
     {
-      icon: workIcon,
-      date: '2010 - 2011',
-      title: 'Art Director',
-      subtitle: 'San Francisco, CA',
-      desc: 'Creative Direction, User Experience, Visual Design, SEO, Online Marketing',
-    },
-    {
-      icon: workIcon,
-      date: '2008 - 2010',
-      title: 'Web Designer',
-      subtitle: 'Los Angeles, CA',
-      desc: 'User Experience, Visual Design',
-    },
-    {
-      icon: workIcon,
-      date: '2006 - 2008',
-      title: 'Web Designer',
-      subtitle: 'San Francisco, CA',
-      desc: 'User Experience, Visual Design',
-    },
-    {
       icon: schoolIcon,
-      date: 'April 2013',
-      title: 'Content Marketing for Web, Mobile and Social Media',
-      subtitle: 'Online Course',
-      desc: 'Strategy, Social Media',
-    },
-    {
-      icon: schoolIcon,
-      date: 'November 2012',
-      title: 'Agile Development Scrum Master',
-      subtitle: 'Certification',
-      desc: 'Creative Direction, User Experience, Visual Design',
+      date: '2002 - 2006',
+      title: 'Bachelor of Science in Interactive Digital Media Visual Imaging',
+      subtitle: 'Bachelor Degree',
+      desc: 'Creative Direction, Visual Design',
     },
     {
       icon: schoolIcon,
