@@ -3,18 +3,16 @@
 $header-font-size: 21px;
 
 .section_nav{
-    background-color: transparent;
-    top: 0px;
-    color: $black-color;
-    overflow: hidden;
-    width: 100%;
-    max-width: 100%;
-    z-index: 123;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
     backdrop-filter: blur(20px);
+    background-color: rgb(227 232 239 / 39%);
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    color: #0b3558;
+    max-width: 100%;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    z-index: 123;
 
-
-    
     .navbar-brand{
         color: $black-color;
         font-size: $header-font-size;

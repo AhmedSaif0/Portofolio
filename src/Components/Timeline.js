@@ -34,31 +34,31 @@ export const Timeline = () => {
     {
       icon: workIcon,
       date: 'june/2022 - present',
-      title: 'IT suport',
+      title: 'IT support',
       subtitle: 'Palmtree Computers',
-      desc: `created some web aplications and shell scripts to help in porduction line,\ntroubleshooted and resolved a wide array of technical issues.`,
-    },
-    {
-      icon: workIcon,
-      date: '2011 - present',
-      title: 'Creative Director',
-      subtitle: 'Miami, FL',
-      desc: 'Creative Direction, User Experience, Visual Design, Project Management, Team Leading',
+      desc: `I have developing web applications and Bash scripts to optimize in production line processes,\ntroubleshooted and resolved a wide array of technical issues.`,
     },
     {
       icon: schoolIcon,
-      date: '2002 - 2006',
-      title: 'Bachelor of Science in Interactive Digital Media Visual Imaging',
-      subtitle: 'Bachelor Degree',
-      desc: 'Creative Direction, Visual Design',
+      date: '2022 - 2023',
+      title: 'Front-end Course',
+      subtitle: 'FreeCodeCamp',
+      desc: 'Ive dedicated over 50 hours to learning the React.js framework and building web applications.',
     },
     {
       icon: schoolIcon,
-      date: '2002 - 2006',
-      title: 'Bachelor of Science in Interactive Digital Media Visual Imaging',
-      subtitle: 'Bachelor Degree',
-      desc: 'Creative Direction, Visual Design',
+      date: '2020 - 2021',
+      title: 'Training period',
+      subtitle: 'National Authority for Graduate Employment Sudan',
+      desc: 'I have learned the principles of web programming and collaborated on a full-stack project.',
     },
+    // {
+    //   icon: schoolIcon,
+    //   date: '2002 - 2006',
+    //   title: 'Bachelor of Science in Interactive Digital Media Visual Imaging',
+    //   subtitle: 'Bachelor Degree',
+    //   desc: 'Creative Direction, Visual Design',
+    // },
     { icon: starIcon },
   ];
 
@@ -71,11 +71,11 @@ export const Timeline = () => {
         {timeline.map((t, i) => {
           const contentStyle =
             i === 0
-              ? { background: 'rgb(33, 150, 243)', color: 'red' }
+              ? { background: 'rgb(171 218 255)', color: '#ccc' }
               : undefined;
           const arrowStyle =
             i === 0
-              ? { borderRight: '7px solid  rgb(33, 150, 243)' }
+              ? { borderRight: '7px solid rgb(171 218 255)' }
               : undefined;
 
           return (
