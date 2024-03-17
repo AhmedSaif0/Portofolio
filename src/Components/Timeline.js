@@ -71,7 +71,7 @@ export const Timeline = () => {
         {timeline.map((t, i) => {
           const contentStyle =
             i === 0
-              ? { background: 'rgb(171 218 255)', color: '#ccc' }
+              ? { background: 'rgb(171 218 255)', color: 'rgb(11, 53, 88)' }
               : undefined;
           const arrowStyle =
             i === 0
