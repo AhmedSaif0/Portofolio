@@ -33,7 +33,7 @@ const Projects = () => {
     title: "Expenses Traker",
     description:"tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
     image : imag ,
-    href:"https://expensetracker90.netlify.app"
+    href:"https://ahmedsaif0.github.io/EXPENSE-TRACKER/"
 
   }]
 
