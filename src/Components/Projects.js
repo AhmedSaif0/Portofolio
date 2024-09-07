@@ -17,7 +17,7 @@ const Projects = () => {
     title: "Battery Test",
     description:"web application tracking laptop battery discharging",
     image : imag2 ,
-    href:"https://batterytest.netlify.app/"
+ 
 
   },
   {
