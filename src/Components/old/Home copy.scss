@@ -76,11 +76,11 @@ $header-font-size: 21px;
                 position: relative;
                 align-self: center;
                 height: 286px;
-                border-radius: 3px;
+                border-radius: 100%;
                 width: 297px;
                 object-fit: cover;
                 z-index: 1;
-                clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
+                // clip-path: polygon(100% 0, 100% 90%, 90% 100%, 0 100%, 0 10%, 10% 0);
               }
 
 

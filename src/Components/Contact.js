@@ -7,7 +7,7 @@ const Contact = () => {
   const [sec, setSec] = useState();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+   
 
     emailjs
       .sendForm('service_5wpmhke', 'template_gvdy9ug', form.current, {
@@ -29,23 +29,23 @@ const Contact = () => {
   };
 
   return (
-    <section className='contact'>
+    <section className='contact' id='contact'>
       <h2 className='h2'>Contact Me</h2>
       <div className='container flex'>
-      <form className="form-group"
-       ref={form} onSubmit={sendEmail}
-        id="exampleInputEmail1" 
-        aria-describedby="emailHelp" 
-        placeholder="Enter email"
-      >
-        <label for="exampleInputEmail1">Name</label>
-        <input type="text" name="user_name" className="form-control" />
-        <label>Email</label>
-        <input type="email" name="user_email" className="form-control" />
-        <label>Message</label>
-        <textarea name="message" className="form-control"/>
-        <input type="submit" value="Send" className="btn btn-primary"/>
-      </form>
+        <form className="form-group"
+          ref={form} onSubmit={sendEmail}
+            id="exampleInputEmail1" 
+            aria-describedby="emailHelp" 
+            placeholder="Enter email"
+          >
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" name="user_name" className="form-control" />
+          <label>Email</label>
+          <input type="email" name="user_email" className="form-control" />
+          <label>Message</label>
+          <textarea name="message" className="form-control"/>
+          <input type="submit" value="Send" className="btn btn-primary"/>
+        </form>
 
 {sec}
       

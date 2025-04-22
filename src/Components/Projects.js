@@ -13,29 +13,33 @@ import imag2 from '../Assets/images/bty.png'
 const Projects = () => {
 
   const projectData = [ {
-    key:1,
-    title: "Battery Test",
-    description:"web application tracking laptop battery discharging",
-    image : imag2 ,
- 
+                            id:1,
+                            title: "Battery Test",
+                            description:"web application tracking laptop battery discharging",
+                            image : imag2 ,
+                            href:"https://btyapp.netlify.app",
+                            sourseCode:"https://github.com/AhmedSaif0/batteryTest45min.git",
+                        
 
-  },
-  {
-    key:1,
-    title: "Van life",
-    description:"Car rental website",
-    image : imag1 ,
-    href:"https://vanlive.netlify.app"
+                          },
+                          {
+                            id:2,
+                            title: "Van life",
+                            description:"Car rental website",
+                            image : imag1 ,
+                            href:"https://vanlive.netlify.app",
+                            sourseCode:"https://github.com/AhmedSaif0/Van-Life.git",
 
-  },
-  {
-    key:1,
-    title: "Expenses Traker",
-    description:"tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
-    image : imag ,
-    href:"https://ahmedsaif0.github.io/EXPENSE-TRACKER/"
+                          },
+                          {
+                            id:3,
+                            title: "Expenses Traker",
+                            description:"tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
+                            image : imag ,
+                            href:"https://ahmedsaif0.github.io/EXPENSE-TRACKER/",
+                            sourseCode:"https://github.com/AhmedSaif0/EXPENSE-TRACKER.git",
 
-  }]
+                          }]
 
   return (
     <div className='proj-page ' id='projects'>
@@ -46,11 +50,12 @@ const Projects = () => {
 
       {
           projectData.map( (x) => (
-            <Project key={x.key} 
+            <Project key={x.id} 
                       title= {x.title}
                       description = {x.description}
                       image = {x.image}
                       href={x.href}
+                      sourseCode={x.sourseCode}
                     />
 
           ) )

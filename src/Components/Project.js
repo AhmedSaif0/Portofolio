@@ -4,9 +4,9 @@ import '../Assets/Project.scss'
 import '../Assets/Services.scss'
 
 
-const Project = ({key,image,title,description,href}) => {
+const Project = ({id,image,title,description,href,sourseCode}) => {
   return (
-        <div className='project_card' key={key}>
+        <div className='project_card' key={id}>
       
                 {<img className='pro-img' src={image} alt='project'/> || 
                 
@@ -21,7 +21,7 @@ const Project = ({key,image,title,description,href}) => {
                       <button className="card__button" >
                         <a href={href} target="_blank" style={{textDecoration:"none"}}>Live Demo</a>
                       </button>
-                      <button className="card__button secondary">Source Code</button>
+                      <button href={sourseCode} className="card__button secondary">Source Code</button>
                     </div>
 
                 </div>
