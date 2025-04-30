@@ -33,8 +33,15 @@ export const Timeline = () => {
   const timeline = [
     {
       icon: workIcon,
-      date: 'june/2022 - present',
-      title: 'IT support',
+      date: 'Oct/2024 - present',
+      title: 'System Admin | internal App developer - Full-time',
+      subtitle: 'YesAgain FZC',
+      desc: `Served as a System Administrator with responsibilities in web development, focusing on designing, developing, and maintaining internal application systems to enhance workflows and ensure operational efficiency.`,
+    },
+    {
+      icon: workIcon,
+      date: 'Sep/2022 - Sep/2024',
+      title: 'IT support - Full-time',
       subtitle: 'Palmtree Computers',
       desc: `I have developing web applications and Bash scripts to optimize in production line processes,\ntroubleshooted and resolved a wide array of technical issues.`,
     },
