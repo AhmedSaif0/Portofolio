@@ -40,10 +40,10 @@ const Projects = () => {
                             sourseCode:"https://github.com/AhmedSaif0/EXPENSE-TRACKER.git",
 
                           }
-                                                {
+                          {
                             id:4,
                             title: "Multi Vendor E-commerce",
-                            description: "A full-stack multi-vendor e-commerce platform for agricultural products. Currently in development with Next.js, Tailwind CSS, and modern best practices."
+                            description: "A full-stack multi-vendor e-commerce platform for agricultural products. Currently in development with Next.js, Tailwind CSS, and modern best practices.",
                             image : '../Assets/images/rahtak.png' ,
                             href:"https://rahtak-farming.vercel.app/",
                             sourseCode:"/",
