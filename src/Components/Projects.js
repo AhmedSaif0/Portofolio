@@ -7,9 +7,13 @@ import Project from './Project'
 // import imag1 from '../Assets/images/van.png'
 // import imag2 from '../Assets/images/expenses.png'
 
+
 import imag from '../Assets/images/expenses.png'
 import imag1 from '../Assets/images/van.png'
 import imag2 from '../Assets/images/bty.png'
+import rahtak from '../Assets/images/rahtak.png'
+import Worldwise from '../Assets/images/Worldwise.png'
+
 const Projects = () => {
 
   const projectData = [{
@@ -44,7 +48,7 @@ const Projects = () => {
     id: 4,
     title: "Multi Vendor E-commerce",
     description: "A full-stack multi-vendor e-commerce platform for agricultural products. Currently in development with Next.js, Tailwind CSS, and modern best practices.",
-    image: '../Assets/images/rahtak.png',
+    image: rahtak ,
     href: "https://rahtak-farming.vercel.app/",
     sourseCode: " ",
   },
@@ -52,7 +56,7 @@ const Projects = () => {
     id: 5,
     title: "Worldwise",
     description: "A travel tracking app built with React that allows users to log, visualize, and organize their trips around the world. Features include interactive maps, location-based notes, and an intuitive UI.",
-    image: "../Assets/images/Worldwise.png",
+    image: Worldwise,
     href: "https://worldwise25.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/Worldwise_React_App",
   }]
