@@ -39,6 +39,23 @@ const Projects = () => {
                             href:"https://ahmedsaif0.github.io/EXPENSE-TRACKER/",
                             sourseCode:"https://github.com/AhmedSaif0/EXPENSE-TRACKER.git",
 
+                          }
+                                                {
+                            id:4,
+                            title: "Multi Vendor E-commerce",
+                            description: "A full-stack multi-vendor e-commerce platform for agricultural products. Currently in development with Next.js, Tailwind CSS, and modern best practices."
+                            image : '../Assets/images/rahtak.png' ,
+                            href:"https://rahtak-farming.vercel.app/",
+                            sourseCode:"/",
+
+                          }
+                          {
+                            id: 5,
+                            title: "Worldwise",
+                            description: "A travel tracking app built with React that allows users to log, visualize, and organize their trips around the world. Features include interactive maps, location-based notes, and an intuitive UI.",
+                            image: "../Assets/images/Worldwise.png",
+                            href: "https://worldwise25.netlify.app",
+                            sourseCode: "https://github.com/AhmedSaif0/Worldwise_React_App",
                           }]
 
   return (
