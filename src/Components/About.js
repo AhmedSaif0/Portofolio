@@ -19,7 +19,7 @@ I’m a front-end developer with over 5 years of experience in the IT industry, 
         </div>
         <div className='details'>
           <ul>
-              // <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>
+                   {/* <li> <strong> <span> Age: </span> </strong> <span> 28 </span></li>*/}
               <li> <strong> <span> Residence: </span> </strong> <span> UAE </span></li>
               <li> <strong> <span> Freelance: </span> </strong> <span> Available </span></li>
               <li> <strong> <span> Address: </span> </strong> <span> Dubai, UAE </span></li>
