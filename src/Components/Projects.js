@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaReact, FaBootstrap, FaLayerGroup } from 'react-icons/fa'
+import { SiTailwindcss, SiNextdotjs, SiSupabase, SiPostgresql } from 'react-icons/si'
 import '../Assets/Projects.scss'
 import '../Assets/Home.scss'
 import Project from './Project'
@@ -23,8 +25,7 @@ const Projects = () => {
     image: imag2,
     href: "https://btyapp.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/batteryTest45min.git",
-
-
+    techstack: [<FaReact />]
   },
   {
     id: 2,
@@ -33,24 +34,25 @@ const Projects = () => {
     image: imag1,
     href: "https://vanlive.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/Van-Life.git",
-
+    techstack: [<FaReact />, <FaBootstrap />]
   },
   {
     id: 3,
     title: "Expenses Traker",
-    description: "tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
+    description: "Tool helps individuals monitor and manage their financial outflows by recording and categorizing expenditures.",
     image: imag,
     href: "https://ahmedsaif0.github.io/EXPENSE-TRACKER/",
     sourseCode: "https://github.com/AhmedSaif0/EXPENSE-TRACKER.git",
-
+    techstack: [<FaReact />, <FaBootstrap />]
   },
   {
     id: 4,
     title: "Multi Vendor E-commerce",
     description: "A full-stack multi-vendor e-commerce platform for agricultural products. Currently in development with Next.js, Tailwind CSS, and modern best practices.",
-    image: rahtak ,
+    image: rahtak,
     href: "https://rahtak-farming.vercel.app/",
     sourseCode: " ",
+    techstack: [<SiNextdotjs />, <SiTailwindcss />, <FaLayerGroup />, <SiSupabase />, <SiPostgresql />]
   },
   {
     id: 5,
@@ -59,6 +61,7 @@ const Projects = () => {
     image: Worldwise,
     href: "https://worldwise25.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/Worldwise_React_App",
+    techstack: [<FaReact />, <SiTailwindcss />]
   }]
 
   return (
@@ -76,6 +79,7 @@ const Projects = () => {
               image={x.image}
               href={x.href}
               sourseCode={x.sourseCode}
+              techstack={x.techstack}
             />
 
           ))
