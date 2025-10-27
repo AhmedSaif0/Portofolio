@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaReact, FaBootstrap, FaLayerGroup } from 'react-icons/fa'
+import { FaReact, FaBootstrap, FaLayerGroup, FaHtml5, FaCss3 ,FaJs,FaSass  } from 'react-icons/fa'
 import { SiTailwindcss, SiNextdotjs, SiSupabase, SiPostgresql } from 'react-icons/si'
 import '../Assets/Projects.scss'
 import '../Assets/Home.scss'
@@ -25,7 +25,7 @@ const Projects = () => {
     image: imag2,
     href: "https://btyapp.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/batteryTest45min.git",
-    techstack: [<FaReact />]
+    techstack: [<FaJs />, <FaHtml5 />,<FaCss3/>]
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const Projects = () => {
     image: imag1,
     href: "https://vanlive.netlify.app",
     sourseCode: "https://github.com/AhmedSaif0/Van-Life.git",
-    techstack: [<FaReact />, <FaBootstrap />]
+    techstack: [<FaHtml5 />,<FaCss3/>,<FaReact />, <FaBootstrap />]
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const Projects = () => {
     image: imag,
     href: "https://ahmedsaif0.github.io/EXPENSE-TRACKER/",
     sourseCode: "https://github.com/AhmedSaif0/EXPENSE-TRACKER.git",
-    techstack: [<FaReact />, <FaBootstrap />]
+    techstack: [<FaHtml5 />,<FaCss3/>,<FaReact />, <FaBootstrap />]
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const Projects = () => {
     image: rahtak,
     href: "https://rahtak-farming.vercel.app/",
     sourseCode: " ",
-    techstack: [<SiNextdotjs />, <SiTailwindcss />, <FaLayerGroup />, <SiSupabase />, <SiPostgresql />]
+    techstack: [<SiNextdotjs />, <SiTailwindcss />, <SiSupabase />, <SiPostgresql />]
   },
   {
     id: 5,
