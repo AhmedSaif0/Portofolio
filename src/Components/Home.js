@@ -23,7 +23,7 @@ const Home = () => {
       <div className='text'>
         <p className="hello">Hello, I’m</p>
           <h3 className="Name">Ahmed Saif</h3>
-          <h3 className='title'>Web Developer </h3>
+          <h3 className='title'>IT Infrastructure & Systems Engineer</h3>
           <div className="socials">
             <ul >
             <li><a href="https://linkedin.com/in/ahmed-saif0"><BsLinkedin/></a></li>
