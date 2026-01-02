@@ -14,7 +14,11 @@ const about = () => {
         <div className='about-text'>
              <strong>I’m Ahmed Saifeldeen.</strong> <br />
               <p>
-I’m a front-end developer with over 5 years of experience in the IT industry, passionate about building smooth, user-friendly websites. I love learning new tech, solving problems, and turning ideas into real, functional products that people enjoy using.
+I’m Ahmed Saif, an Infrastructure-focused IT Engineer with over 5 years of hands-on experience across enterprise IT environments.
+
+I specialize in systems troubleshooting, networking, endpoint management, and infrastructure support, with a growing focus on cloud and automation.
+
+My strength is working with real-world systems, identifying root causes, and building reliable technical foundations that reduce operational noise and human dependency.
             </p>
         </div>
         <div className='details'>
